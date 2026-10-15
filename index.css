@@ -4217,17 +4217,17 @@ html, body {
 
 /* 1. Why Bunyan Section */
 .why-bunyan-section {
-  padding: 115px 0 120px !important;
-  background: rgba(12, 8, 30, 0.45);
-  border-top: 1px solid var(--border-glass);
-  border-bottom: 1px solid var(--border-glass);
+  padding: 110px 0 115px !important;
+  background: transparent !important;
+  border-top: none !important;
+  border-bottom: none !important;
   position: relative;
 }
 
 body.theme-light .why-bunyan-section {
-  background: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 50%, #F8FAFC 100%) !important;
-  border-top: 1px solid #E2E8F0 !important;
-  border-bottom: 1px solid #E2E8F0 !important;
+  background: transparent !important;
+  border-top: none !important;
+  border-bottom: none !important;
 }
 
 .why-bunyan-section .section-header {
