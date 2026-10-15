@@ -4202,272 +4202,6 @@ html, body {
   }
 }
 
-/* --- 4. Mobile Devices (max-width: 768px) --- */
-@media (max-width: 768px) {
-  .container {
-    padding: 0 18px;
-  }
-
-  .announcement-bar {
-    font-size: 0.82rem;
-    padding: 8px 12px;
-  }
-
-  .announcement-content {
-    gap: 8px;
-  }
-
-  /* Typography */
-  .hero-title {
-    font-size: 2.1rem !important;
-    line-height: 1.35 !important;
-  }
-
-  .page-hero-title {
-    font-size: 2rem !important;
-    line-height: 1.35 !important;
-  }
-
-  .section-title {
-    font-size: 1.75rem !important;
-  }
-
-  .hero-desc,
-  .page-hero-desc,
-  .section-desc {
-    font-size: 0.95rem !important;
-    line-height: 1.75 !important;
-  }
-
-  /* Hero Actions */
-  .hero-actions {
-    flex-direction: column !important;
-    width: 100% !important;
-    gap: 12px !important;
-  }
-
-  .hero-actions .btn {
-    width: 100% !important;
-    justify-content: center !important;
-    padding: 14px 20px !important;
-  }
-
-  .hero-trust-row {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 12px !important;
-    width: 100% !important;
-  }
-
-  .hero-trust-row .hero-kpi-pill:last-child {
-    grid-column: span 2;
-  }
-
-  /* Hero Visual & Badges */
-  .hero-visual {
-    width: 100%;
-  }
-
-  .floating-badge {
-    position: relative !important;
-    top: auto !important;
-    bottom: auto !important;
-    left: auto !important;
-    right: auto !important;
-    animation: none !important;
-    margin-top: 14px !important;
-    width: 100% !important;
-  }
-
-  .badge-speed, .badge-client {
-    position: relative !important;
-  }
-
-  /* Lineup Category Selector */
-  .lineup-tabs-wrapper {
-    justify-content: flex-start !important;
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch !important;
-    padding: 8px 4px !important;
-    margin: 0 -18px 24px !important;
-    padding-right: 18px !important;
-    padding-left: 18px !important;
-    scrollbar-width: none !important;
-  }
-
-  .lineup-tabs-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-
-  .lineup-tabs {
-    flex-shrink: 0 !important;
-  }
-
-  .lineup-tab-btn {
-    padding: 9px 18px !important;
-    font-size: 0.88rem !important;
-  }
-
-  .lineup-tab-content.active {
-    grid-template-columns: 1fr !important;
-    gap: 20px !important;
-  }
-
-  /* Features & Portfolio Grids */
-  .features-grid {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-  }
-
-  .portfolio-grid {
-    grid-template-columns: 1fr !important;
-    gap: 20px !important;
-  }
-
-  /* Forms */
-  .form-row-2col {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-  }
-
-  /* Footer */
-  .footer-inner {
-    grid-template-columns: 1fr !important;
-    gap: 32px !important;
-  }
-
-  .footer-bottom {
-    flex-direction: column !important;
-    text-align: center !important;
-    gap: 14px !important;
-  }
-
-  .footer-meta-tags {
-    justify-content: center !important;
-    flex-wrap: wrap !important;
-  }
-}
-
-/* --- 5. Small Phones (max-width: 480px) --- */
-@media (max-width: 480px) {
-  .container {
-    padding: 0 14px;
-  }
-
-  /* Header compacting */
-  .header-inner {
-    height: 64px;
-  }
-
-  .logo-mark {
-    width: 36px;
-    height: 36px;
-  }
-
-  .logo-title {
-    font-size: 1.15rem;
-    letter-spacing: 2px;
-  }
-
-  .logo-sub {
-    display: none !important;
-  }
-
-  .theme-toggle {
-    width: 36px;
-    height: 36px;
-    font-size: 1rem;
-  }
-
-  .btn-whatsapp-icon {
-    width: 36px;
-    height: 36px;
-  }
-
-  .header-cta-btn {
-    height: 36px !important;
-    padding: 0 12px !important;
-    font-size: 0.8rem !important;
-  }
-
-  .header-cta-btn svg {
-    display: none !important;
-  }
-
-  .mobile-menu-btn {
-    width: 28px;
-    height: 28px;
-  }
-
-  /* Hero Section */
-  .hero-section {
-    padding: 36px 0 28px;
-  }
-
-  .hero-badge {
-    font-size: 0.76rem;
-    padding: 5px 12px;
-  }
-
-  .hero-title {
-    font-size: 1.65rem !important;
-    line-height: 1.35 !important;
-    margin-bottom: 16px;
-  }
-
-  .hero-trust-row {
-    grid-template-columns: 1fr !important;
-  }
-
-  .hero-trust-row .hero-kpi-pill:last-child {
-    grid-column: auto;
-  }
-
-  /* Lineup Cards */
-  .lineup-card {
-    padding: 20px 16px;
-  }
-
-  .lineup-card-title {
-    font-size: 1.15rem !important;
-  }
-
-  .lineup-card-title .title-ar {
-    font-size: 1.15rem !important;
-  }
-
-  .lineup-actions {
-    grid-template-columns: 1fr !important;
-    gap: 8px !important;
-  }
-
-  .lineup-actions .btn {
-    width: 100% !important;
-    padding: 12px !important;
-  }
-
-  /* Page Heroes */
-  .page-hero {
-    padding: 36px 0 24px;
-    margin-bottom: 30px;
-  }
-
-  .page-hero-title {
-    font-size: 1.55rem !important;
-  }
-
-  .subpage-card,
-  .contact-card {
-    padding: 24px 16px !important;
-  }
-
-  /* Prevent any modal overflow */
-  .modal-container {
-    padding: 20px 16px;
-    max-height: 90vh;
-  }
-}
-
 /* ===================================================
    CRITICAL CONTRAST GUARDS & READABILITY ASSURANCE
    Prevents any dark-on-dark or light-on-light collisions
@@ -4659,6 +4393,642 @@ body.theme-light .filter-btn.active {
   background: linear-gradient(135deg, #4338CA, #6D28D9) !important;
   color: #FFFFFF !important;
   border-color: transparent !important;
+}
+
+/* ==========================================================================
+   MOBILE & RESPONSIVE REVOLUTION (TOYOTA-GRADE ERGONOMICS & VISUAL HARMONY)
+   Engineered for maximum legibility, eye comfort, and effortless touch control
+   ========================================================================== */
+
+/* --- 4. Mobile Devices & Tablets (max-width: 768px) --- */
+@media (max-width: 768px) {
+  /* Layout Spacing */
+  .container {
+    padding: 0 16px !important;
+  }
+
+  section {
+    padding: 44px 0 !important;
+  }
+
+  .hero-section {
+    padding: 28px 0 24px !important;
+  }
+
+  .subpage-section {
+    padding: 40px 0 !important;
+  }
+
+  /* Announcement Bar */
+  .announcement-bar {
+    font-size: 0.78rem !important;
+    padding: 6px 12px !important;
+  }
+
+  .announcement-badge {
+    font-size: 0.7rem !important;
+    padding: 2px 8px !important;
+  }
+
+  /* Header */
+  .site-header {
+    height: 60px !important;
+  }
+
+  .header-inner {
+    height: 60px !important;
+  }
+
+  .logo-mark {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .logo-title {
+    font-size: 1.1rem !important;
+    letter-spacing: 1.5px !important;
+  }
+
+  .logo-sub {
+    display: none !important;
+  }
+
+  .btn-whatsapp-icon {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .btn-whatsapp-icon svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .header-cta-btn {
+    height: 34px !important;
+    padding: 0 12px !important;
+    font-size: 0.8rem !important;
+    font-weight: 700 !important;
+  }
+
+  .header-cta-btn svg {
+    width: 13px !important;
+    height: 13px !important;
+  }
+
+  .mobile-menu-btn {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  /* Primary Fluid Typography - Highly Comfortable for Arabic */
+  .hero-title {
+    font-size: clamp(1.45rem, 5.2vw, 1.8rem) !important;
+    line-height: 1.42 !important;
+    letter-spacing: -0.2px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .page-hero-title {
+    font-size: clamp(1.35rem, 4.8vw, 1.65rem) !important;
+    line-height: 1.4 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .section-title {
+    font-size: clamp(1.25rem, 4.2vw, 1.5rem) !important;
+    line-height: 1.42 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .section-tag,
+  .hero-badge,
+  .section-subtitle {
+    font-size: 0.78rem !important;
+    padding: 4px 12px !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Body Paragraphs - Optimum Eye Comfort */
+  p,
+  .hero-desc,
+  .page-hero-desc,
+  .section-desc,
+  .lineup-card-desc,
+  .banner-cta-desc {
+    font-size: 0.92rem !important;
+    line-height: 1.75 !important;
+    color: #475569 !important;
+  }
+
+  .hero-desc {
+    margin-bottom: 20px !important;
+  }
+
+  /* Buttons & Touch Targets */
+  .hero-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px !important;
+    margin-bottom: 22px !important;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 13px 20px !important;
+    font-size: 0.95rem !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  /* Trust Indicators (KPIs) - Sleek 3-Column Compact Grid */
+  .hero-trust-row {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+
+  .hero-kpi-pill {
+    padding: 8px 4px !important;
+    text-align: center !important;
+    border-radius: 12px !important;
+  }
+
+  .kpi-val {
+    font-size: 1.05rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 2px !important;
+  }
+
+  .kpi-lbl {
+    font-size: 0.72rem !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Hero Visual & Badges */
+  .hero-visual {
+    margin-top: 8px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .floating-badge {
+    position: static !important;
+    animation: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 10px 14px !important;
+    border-radius: 12px !important;
+    font-size: 0.82rem !important;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06) !important;
+  }
+
+  .badge-speed, .badge-client {
+    position: static !important;
+  }
+
+  /* Lineup Section (Toyota-Grade Category Selector) */
+  .lineup-tabs-wrapper {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: 4px 0 12px !important;
+    margin: 0 -16px 20px !important;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+    scrollbar-width: none !important;
+  }
+
+  .lineup-tabs-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .lineup-tab-btn {
+    padding: 8px 16px !important;
+    font-size: 0.85rem !important;
+    white-space: nowrap !important;
+  }
+
+  .lineup-tab-content.active {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .lineup-card {
+    padding: 16px 14px !important;
+    border-radius: 18px !important;
+  }
+
+  .lineup-img-wrap {
+    height: 155px !important;
+    border-radius: 12px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .lineup-card-title {
+    font-size: 1.12rem !important;
+    margin-bottom: 6px !important;
+  }
+
+  .lineup-card-title .title-en {
+    font-size: 0.75rem !important;
+  }
+
+  .lineup-price-box {
+    padding: 10px 12px !important;
+    margin-bottom: 14px !important;
+    border-radius: 10px !important;
+  }
+
+  .price-value {
+    font-size: 1.35rem !important;
+  }
+
+  .lineup-specs {
+    gap: 7px !important;
+    margin-bottom: 16px !important;
+    padding-top: 12px !important;
+  }
+
+  .lineup-specs li {
+    font-size: 0.82rem !important;
+  }
+
+  .lineup-actions {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+
+  .lineup-actions .btn {
+    padding: 11px 8px !important;
+    font-size: 0.84rem !important;
+    border-radius: 10px !important;
+  }
+
+  /* Why Bunyan Section */
+  .why-bunyan-section {
+    padding: 40px 0 !important;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    margin-top: 20px !important;
+  }
+
+  .feature-card {
+    padding: 18px 16px !important;
+    border-radius: 16px !important;
+  }
+
+  .feature-icon-box {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 1.3rem !important;
+    border-radius: 12px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .feature-card-title {
+    font-size: 1.08rem !important;
+    margin-bottom: 6px !important;
+  }
+
+  .feature-card-desc {
+    font-size: 0.88rem !important;
+    line-height: 1.65 !important;
+  }
+
+  /* Interactive Banner CTA */
+  .banner-cta-section {
+    padding: 44px 0 !important;
+  }
+
+  .banner-cta-title {
+    font-size: clamp(1.25rem, 4.5vw, 1.55rem) !important;
+    line-height: 1.4 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .banner-cta-desc {
+    font-size: 0.88rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 20px !important;
+    padding: 0 4px !important;
+  }
+
+  .banner-cta-buttons {
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  .banner-cta-buttons .btn {
+    width: 100% !important;
+    padding: 13px 20px !important;
+    font-size: 0.95rem !important;
+    justify-content: center !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 44px 0 20px !important;
+  }
+
+  .footer-grid,
+  .footer-inner {
+    grid-template-columns: 1fr !important;
+    gap: 26px !important;
+    padding-bottom: 28px !important;
+  }
+
+  .site-footer h4,
+  .site-footer .footer-heading,
+  .site-footer .footer-col-title {
+    font-size: 1.05rem !important;
+    margin-bottom: 14px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .site-footer p,
+  .site-footer .footer-desc,
+  .site-footer .footer-tagline,
+  .site-footer .policy-note {
+    font-size: 0.88rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .site-footer .footer-links li,
+  .site-footer .footer-policy-links li {
+    margin-bottom: 9px !important;
+  }
+
+  .site-footer .footer-links a,
+  .site-footer .footer-policy-links a {
+    font-size: 0.88rem !important;
+  }
+
+  .site-footer .footer-guarantees-list {
+    gap: 9px !important;
+  }
+
+  .site-footer .footer-guarantees-list div {
+    font-size: 0.86rem !important;
+  }
+
+  .site-footer .footer-bottom {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 12px !important;
+    padding: 16px 0 !important;
+  }
+
+  .site-footer .copyright {
+    font-size: 0.8rem !important;
+  }
+
+  .site-footer .footer-meta-tags {
+    justify-content: center !important;
+    gap: 6px !important;
+  }
+
+  .site-footer .footer-meta-tags span {
+    font-size: 0.72rem !important;
+    padding: 3px 8px !important;
+  }
+
+  /* Subpages Common Components */
+  .page-hero {
+    padding: 26px 0 18px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .breadcrumbs {
+    font-size: 0.8rem !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Portfolio Page Mobile */
+  .portfolio-filters {
+    display: flex !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 8px !important;
+    padding: 4px 0 10px !important;
+    margin: 0 -16px 18px !important;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+    scrollbar-width: none !important;
+  }
+
+  .portfolio-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    padding: 8px 16px !important;
+    font-size: 0.84rem !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .project-card {
+    border-radius: 18px !important;
+  }
+
+  .project-img-wrap {
+    height: 180px !important;
+  }
+
+  .project-body {
+    padding: 16px 14px !important;
+  }
+
+  .project-title {
+    font-size: 1.1rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .project-desc {
+    font-size: 0.88rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .project-meta {
+    gap: 6px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .tech-tag {
+    font-size: 0.72rem !important;
+    padding: 2px 8px !important;
+  }
+
+  .project-stat-pill {
+    font-size: 0.78rem !important;
+    padding-top: 10px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+  }
+
+  /* Pricing Page Mobile */
+  .pricing-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .pricing-card {
+    padding: 20px 16px !important;
+    border-radius: 18px !important;
+  }
+
+  .plan-name {
+    font-size: 1.15rem !important;
+  }
+
+  .price-box {
+    margin: 12px 0 !important;
+    padding: 12px 14px !important;
+  }
+
+  .price-current .amount {
+    font-size: 1.8rem !important;
+  }
+
+  .plan-features li {
+    font-size: 0.84rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .calculator-box {
+    padding: 20px 14px !important;
+    border-radius: 18px !important;
+  }
+
+  .calc-header h2 {
+    font-size: 1.3rem !important;
+  }
+
+  .calc-field label {
+    font-size: 0.9rem !important;
+  }
+
+  .calc-select {
+    padding: 11px 12px !important;
+    font-size: 0.88rem !important;
+  }
+
+  .calc-check-label {
+    padding: 10px 12px !important;
+    font-size: 0.84rem !important;
+  }
+
+  .calc-result-box {
+    padding: 16px 14px !important;
+  }
+
+  .calc-total-price {
+    font-size: 1.8rem !important;
+  }
+
+  .enterprise-banner {
+    padding: 20px 16px !important;
+    border-radius: 16px !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 14px !important;
+  }
+
+  /* Modals on Mobile */
+  .modal-card {
+    padding: 22px 16px !important;
+    width: 94vw !important;
+    max-height: 88vh !important;
+    border-radius: 20px !important;
+  }
+
+  .modal-close {
+    top: 12px !important;
+    left: 12px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .modal-title {
+    font-size: 1.25rem !important;
+  }
+
+  /* Floating WhatsApp on Mobile */
+  .floating-whatsapp {
+    bottom: 20px !important;
+    left: 20px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .floating-whatsapp svg {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .whatsapp-tooltip {
+    display: none !important;
+  }
+}
+
+/* --- 5. Small Compact Phones (max-width: 420px) --- */
+@media (max-width: 420px) {
+  .container {
+    padding: 0 12px !important;
+  }
+
+  .logo-title {
+    font-size: 0.98rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .header-cta-btn {
+    padding: 0 10px !important;
+    font-size: 0.76rem !important;
+  }
+
+  .hero-trust-row {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 5px !important;
+  }
+
+  .hero-kpi-pill {
+    padding: 6px 3px !important;
+  }
+
+  .kpi-val {
+    font-size: 0.95rem !important;
+  }
+
+  .kpi-lbl {
+    font-size: 0.68rem !important;
+  }
+
+  .lineup-actions {
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+  }
+
+  .lineup-actions .btn {
+    width: 100% !important;
+  }
 }
 
 
