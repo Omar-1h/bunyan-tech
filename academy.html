@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معسكر بُنيان للفل ستاك | Bunyan Full-Stack Bootcamp</title>
+  <meta name="description" content="انضم إلى معسكر بُنيان المكثف لتطوير الويب المتكامل Full-Stack: 16 أسبوعاً من التطبيق العملي لبناء مشاريع تجارية حقيقية بإشراف كبار المهندسين.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M30,15 L70,30 L70,70 L30,85 Z' fill='%23586FE0'/><path d='M30,35 L60,45 L60,65 L30,55 Z' fill='%238754E8'/><polygon points='40,50 48,43 54,48 54,55 48,60 40,55' fill='%23352A72'/><text x='50' y='53' font-size='10' font-family='monospace' fill='%238CCDF4' text-anchor='middle'>&lt;/&gt;</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css?v=4">
+</head>
+<body class="theme-dark">
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <defs>
+              <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8CCDF4" />
+                <stop offset="50%" stop-color="#586FE0" />
+                <stop offset="100%" stop-color="#8754E8" />
+              </linearGradient>
+              <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#586FE0" />
+                <stop offset="100%" stop-color="#352A72" />
+              </linearGradient>
+              <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#A78BFA" />
+                <stop offset="100%" stop-color="#8754E8" />
+              </linearGradient>
+            </defs>
+            <path d="M42 16L78 34L78 86L42 104L42 16Z" fill="url(#primaryGrad)" />
+            <path d="M42 16L18 30L18 84L42 104L42 16Z" fill="url(#darkGrad)" opacity="0.85" />
+            <path d="M42 34L68 47L68 73L42 86L42 34Z" fill="url(#violetGrad)" />
+            <polygon points="60,50 72,56 72,68 60,74 48,68 48,56" fill="#352A72" stroke="#8CCDF4" stroke-width="1.5" />
+            <text x="60" y="66" fill="#FAFCFF" font-family="'Plus Jakarta Sans', monospace" font-size="11" font-weight="800" text-anchor="middle">&lt;/&gt;</text>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">B U N Y <span class="accent-letter">Λ</span> N</span>
+          <span class="logo-sub">بُنيان للحلول البرمجية والتجارة الإلكترونية</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">الرئيسية</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">خدماتنا والحلول</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">أعمالنا</a></li>
+          <li class="nav-item"><a href="academy.html" class="nav-link active">الأكاديمية <span class="nav-pill">معسكر</span></a></li>
+          <li class="nav-item"><a href="process.html" class="nav-link">كيف نعمل والسياسات</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">التسعير وبناء المشروع</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" title="تبديل المظهر الداكن/الفاتح">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <a href="https://wa.me/966500000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A8%D9%86%D9%8A%D8%A7%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%A7%D9%84%D9%81%D9%84%20%D8%سD8%AA%D8%A7%D9%83" target="_blank" rel="noopener" class="btn-whatsapp-icon" title="محادثة واتساب مباشرة">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.187-.173.289l-.26.302c-.087.087-.177.18-.076.353.101.173.45 1.053 1.137 1.666.883.787 1.628 1.03 1.859 1.145.231.115.367.101.504-.058.138-.159.588-.684.745-.918.157-.234.314-.195.534-.115.22.08 1.397.659 1.637.779.24.12.399.18.457.28.058.1.058.58-.086.985z"/></svg>
+        </a>
+        <a href="#enroll" class="btn btn-primary header-cta-btn">
+          <span>احجز&nbsp;مقعدك</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">الرئيسية</a>
+          <span>/</span>
+          <span class="current">أكاديمية بُنيان للتدريب التقني</span>
+        </div>
+        <h1 class="page-hero-title">
+          معسكر هندسة الويب الشامل <br>
+          <span class="text-gradient">Full-Stack Developer Bootcamp</span>
+        </h1>
+        <p class="page-hero-desc">
+          برنامج تدريبي تطبيقي مكثف يمتد لـ 16 أسبوعاً، ينقلك من الأساسيات وحتى بناء المنصات السحابية ونشرها، لتتخرج كمهندس برمجيات مؤهل للعمل في كبرى الشركات التقنية.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Academy Content -->
+    <section class="container" style="padding-bottom: 80px;">
+      <div class="academy-card-container">
+        <div class="academy-grid">
+          <div class="academy-text">
+            <div class="academy-badge">
+              <span class="badge-icon">🎓</span>
+              <span>الدفعة القادمة: التسجيل المبكر متاح الآن</span>
+            </div>
+            <h2 class="academy-title">منهج دراسي صُمم لمتطلبات سوق العمل 2026</h2>
+            <p class="academy-desc">
+              لا ندرّس النظريات الأكاديمية العقيمة؛ بل ننقلك إلى بيئة برمجية تحاكي كبرى شركات التقنية. 
+              تطبيق عملي يومي لبناء مواقع، متاجر، وتطبيقات سحابية حقيقية بإشراف كبار المهندسين ومراجعة أسبوعية لكودك.
+            </p>
+
+            <div class="curriculum-stack">
+              <div class="stack-box">
+                <div class="stack-header">
+                  <span class="stack-num">01</span>
+                  <h4 class="stack-title">واجهات المستخدم الحديثة (Frontend Mastery)</h4>
+                </div>
+                <div class="stack-tags" dir="ltr">
+                  <span class="tech-pill">HTML5 & Modern CSS</span>
+                  <span class="tech-pill">Tailwind CSS</span>
+                  <span class="tech-pill">JavaScript ES6+</span>
+                  <span class="tech-pill">React 18</span>
+                  <span class="tech-pill">Next.js 14 App Router</span>
+                  <span class="tech-pill">State Management</span>
+                </div>
+              </div>
+
+              <div class="stack-box">
+                <div class="stack-header">
+                  <span class="stack-num">02</span>
+                  <h4 class="stack-title">الأنظمة الخلفية وبناء الـ APIs (Backend Engineering)</h4>
+                </div>
+                <div class="stack-tags" dir="ltr">
+                  <span class="tech-pill">Node.js</span>
+                  <span class="tech-pill">Express</span>
+                  <span class="tech-pill">RESTful APIs</span>
+                  <span class="tech-pill">WebSockets</span>
+                  <span class="tech-pill">JWT Authentication</span>
+                  <span class="tech-pill">Security Best Practices</span>
+                </div>
+              </div>
+
+              <div class="stack-box">
+                <div class="stack-header">
+                  <span class="stack-num">03</span>
+                  <h4 class="stack-title">قواعد البيانات والحوسبة السحابية (DB & DevOps)</h4>
+                </div>
+                <div class="stack-tags" dir="ltr">
+                  <span class="tech-pill">PostgreSQL</span>
+                  <span class="tech-pill">MongoDB</span>
+                  <span class="tech-pill">Prisma ORM</span>
+                  <span class="tech-pill">Git & GitHub</span>
+                  <span class="tech-pill">Docker Containers</span>
+                  <span class="tech-pill">AWS & Vercel Deployment</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="academy-features-list">
+              <div class="feat-item"><span class="feat-check">✓</span> بناء 4 مشاريع تخرج تجارية حقيقية</div>
+              <div class="feat-item"><span class="feat-check">✓</span> كود ريفيو ومراجعة أسبوعية مع كبار المهندسين</div>
+              <div class="feat-item"><span class="feat-check">✓</span> جلسات إعداد السيرة الذاتية ومحاكاة المقابلات الفنية</div>
+              <div class="feat-item"><span class="feat-check">✓</span> شهادة تخرج معتمدة من بُنيان للحلول التقنية</div>
+            </div>
+
+            <div class="academy-action-row" id="enroll">
+              <button class="btn btn-primary btn-lg open-bootcamp-modal">
+                <span>سجل في الدفعة القادمة ($650 بدلاً من $1,200)</span>
+              </button>
+              <a href="https://wa.me/966500000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A8%D9%86%D9%8A%D8%A7%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%AD%D9%85%D9%8A%D9%84%20%D8%AE%D8%B7%D8%A9%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%A7%D9%84%D9%81%D9%84%20%D8%B3%D8%AA%D8%A7%D9%83" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+                <span>استفسر عبر واتساب مباشرة 💬</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="academy-visual">
+            <div class="academy-img-frame">
+              <img src="assets/bootcamp-mockup.jpg" alt="معسكر بنيان للفل ستاك" class="academy-img">
+              <div class="academy-floating-card">
+                <div class="live-indicator">
+                  <span class="live-dot"></span>
+                  <span>الدفعة القادمة تنطلق قريباً</span>
+                </div>
+                <strong>بقي 6 مقاعد فقط للتسجيل المبكر</strong>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar-fill" style="width: 78%;"></div>
+                </div>
+                <span class="discount-pill">خصم 45% للمبادرين</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials from Graduates -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">قصص نجاح</span>
+          <h2 class="section-title">خريجونا يقودون التحول الرقمي</h2>
+          <p class="section-desc">مطورون انطلقوا من الصفر في معسكر بُنيان ويعملون اليوم في كبرى الشركات التقنية.</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              "التحقت بمعسكر الفل ستاك بعد محاولات كثيرة للتعلّم الذاتي لم تكتمل. التطبيق العملي اليومي مع مراجعة الكود والمشاريع الضخمة التي بنيناها أهلتني للحصول على وظيفة مهندسة برمجيات براتب ممتاز."
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">ر.م</div>
+              <div>
+                <strong>ريم المطيري</strong>
+                <span>خريجة معسكر Full-Stack | مهندسة برمجيات حالياً</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              "أقوى ميزة في المعسكر هي محاكاة بيئة العمل الحقيقية (Git Branches, Docker, Code Reviews). لم أشعر بأي رهبة عندما بدأت أول يوم عمل لي في شركتي الجديدة."
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">ع.ش</div>
+              <div>
+                <strong>عبدالله الشهري</strong>
+                <span>خريج الدفعة السابقة | Full-Stack Engineer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              "قمت ببناء منتجي الخاص بعد التخرج مباشرة؛ منصة لإدارة الحجوزات الطبية. الخبرة المعمارية التي اكتسبتها من مهندسي بُنيان وفّرت عليّ سنة كاملة من التجربة والخطأ."
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">ف.ن</div>
+              <div>
+                <strong>فيصل النعيمي</strong>
+                <span>مؤسس منصة MedBooking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Modal -->
+  <div class="modal-backdrop" id="projectModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeProjectModal" aria-label="إغلاق">✕</button>
+      <div class="modal-header">
+        <span class="modal-badge">التسجيل بالمعسكر</span>
+        <h3 class="modal-title">احجز مقعدك بالدفعة القادمة</h3>
+        <p class="modal-desc">املأ بياناتك وسيتواصل معك المستشار الأكاديمي لتزويدك بالخطة ومواعيد المحاضرات.</p>
+      </div>
+      <form id="projectForm" class="modal-form">
+        <div class="form-group">
+          <label for="clientName">الاسم الثلاثي الكريم *</label>
+          <input type="text" id="clientName" class="form-input" placeholder="اسمك الكريم" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="clientPhone">رقم الجوال (واتساب) *</label>
+            <input type="tel" id="clientPhone" class="form-input" placeholder="05XXXXXXXX" required>
+          </div>
+          <div class="form-group">
+            <label for="clientEmail">البريد الإلكتروني *</label>
+            <input type="email" id="clientEmail" class="form-input" placeholder="name@email.com" required>
+          </div>
+        </div>
+        <input type="hidden" id="projectTypeSelect" value="التسجيل في معسكر الفل ستاك">
+        <button type="submit" class="btn btn-primary btn-block btn-lg">
+          <span>تأكيد التسجيل والمتابعة عبر واتساب 🚀</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-notification" id="toastNotification">
+    <div class="toast-icon">✓</div>
+    <div class="toast-text" id="toastMessage">تم استلام طلبك بنجاح!</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <div class="brand-logo footer-logo">
+          <div class="logo-text">
+            <span class="logo-title">B U N Y <span class="accent-letter">Λ</span> N</span>
+            <span class="logo-sub">بُنيان للحلول البرمجية والتجارة الإلكترونية</span>
+          </div>
+        </div>
+        <p class="footer-tagline">منصات برمجية متقدمة ومتاجر إلكترونية عالية التحويل ومعسكرات تدريبية تؤهل قادة التكنولوجيا المستقبليين.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">الصفحات والخدمات</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">خدماتنا والحلول</a></li>
+          <li><a href="portfolio.html">سابقة الأعمال</a></li>
+          <li><a href="academy.html">أكاديمية الفل ستاك</a></li>
+          <li><a href="pricing.html">التسعير وبناء المشروع</a></li>
+          <li><a href="process.html">كيف نعمل والسياسات</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">السياسات والضمانات</h4>
+        <ul class="footer-links">
+          <li><a href="process.html#revisions">سياسة التعديلات الرسمية</a></li>
+          <li><a href="process.html#warranty">ميثاق ضمان الجودة</a></li>
+          <li><a href="process.html#contract">شروط التعاقد والإلغاء</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">مساعدتك في الانطلاق</h4>
+        <p class="policy-note">تواصل مع المستشار التقني لتحديد مسارك التدريبي ومراجعة مشاريعك.</p>
+        <a href="https://wa.me/966500000000" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="margin-top: 10px;">
+          <span>تواصل مع المشرف الأكاديمي 💬</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 شركة بُنيان للحلول البرمجية والتجارة الإلكترونية (BUNYAN). جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js?v=3"></script>
+</body>
+</html>

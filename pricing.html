@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التسعير وبناء المشروع | Build & Price | بُنيان BUNYAN Tech</title>
+  <meta name="description" content="ابنِ وسعّر مشروعك البرمجي تفاعلياً: اختر نوع المنصة، الميزات، واحصل على تقدير فوري ومخصص لمشروعك عبر أداة Configurator من بُنيان.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M30,15 L70,30 L70,70 L30,85 Z' fill='%23586FE0'/><path d='M30,35 L60,45 L60,65 L30,55 Z' fill='%238754E8'/><polygon points='40,50 48,43 54,48 54,55 48,60 40,55' fill='%23352A72'/><text x='50' y='53' font-size='10' font-family='monospace' fill='%238CCDF4' text-anchor='middle'>&lt;/&gt;</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css?v=4">
+</head>
+<body class="theme-dark">
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <defs>
+              <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8CCDF4" />
+                <stop offset="50%" stop-color="#586FE0" />
+                <stop offset="100%" stop-color="#8754E8" />
+              </linearGradient>
+              <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#586FE0" />
+                <stop offset="100%" stop-color="#352A72" />
+              </linearGradient>
+              <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#A78BFA" />
+                <stop offset="100%" stop-color="#8754E8" />
+              </linearGradient>
+            </defs>
+            <path d="M42 16L78 34L78 86L42 104L42 16Z" fill="url(#primaryGrad)" />
+            <path d="M42 16L18 30L18 84L42 104L42 16Z" fill="url(#darkGrad)" opacity="0.85" />
+            <path d="M42 34L68 47L68 73L42 86L42 34Z" fill="url(#violetGrad)" />
+            <polygon points="60,50 72,56 72,68 60,74 48,68 48,56" fill="#352A72" stroke="#8CCDF4" stroke-width="1.5" />
+            <text x="60" y="66" fill="#FAFCFF" font-family="'Plus Jakarta Sans', monospace" font-size="11" font-weight="800" text-anchor="middle">&lt;/&gt;</text>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">B U N Y <span class="accent-letter">Λ</span> N</span>
+          <span class="logo-sub">بُنيان للحلول البرمجية والتجارة الإلكترونية</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">الرئيسية</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">خدماتنا والحلول</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">أعمالنا</a></li>
+          <li class="nav-item"><a href="academy.html" class="nav-link">الأكاديمية <span class="nav-pill">معسكر</span></a></li>
+          <li class="nav-item"><a href="process.html" class="nav-link">كيف نعمل والسياسات</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link active">التسعير وبناء المشروع</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" title="تبديل المظهر الداكن/الفاتح">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <a href="https://wa.me/966500000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A8%D9%86%D9%8A%D8%A7%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D8%AA%D8%B3%D8%B9%D9%8A%D8%B1" target="_blank" rel="noopener" class="btn-whatsapp-icon" title="محادثة واتساب مباشرة">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.187-.173.289l-.26.302c-.087.087-.177.18-.076.353.101.173.45 1.053 1.137 1.666.883.787 1.628 1.03 1.859 1.145.231.115.367.101.504-.058.138-.159.588-.684.745-.918.157-.234.314-.195.534-.115.22.08 1.397.659 1.637.779.24.12.399.18.457.28.058.1.058.58-.086.985z"/></svg>
+        </a>
+        <a href="#configurator" class="btn btn-primary header-cta-btn">
+          <span>ابدأ&nbsp;مشروعك</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">الرئيسية</a>
+          <span>/</span>
+          <span class="current">التسعير وبناء المشروع (Build & Price)</span>
+        </div>
+        <h1 class="page-hero-title">
+          استثمار شفاف ومدروس <br>
+          <span class="text-gradient">ابنِ وسعّر مشروعك بدقة متناهية</span>
+        </h1>
+        <p class="page-hero-desc">
+          على غرار أفضل أدوات التخصيص العالمية؛ حدد نوع نظامك، اختر الميزات المطلوبة، واحصل على تكلفة فورية ومخرجات واضحة بدون أي مفاجآت أو رسوم خفية.
+        </p>
+      </div>
+    </section>
+
+    <!-- Standard Plans Grid -->
+    <section class="container" style="padding-bottom: 70px;">
+      <div class="section-header text-center">
+        <span class="section-subtitle">الباقات القياسية</span>
+        <h2 class="section-title">اختر الباقة المناسبة لمرحلة نمو أعمالك</h2>
+        <p class="section-desc">خطط مصممة لتلبية احتياجات الشركات بمختلف أحجامها، مع ضمان الجودة والصيانة المجانية.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Plan 1 -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <span class="plan-name">باقة الهوية الرقمية للشركات</span>
+            <p class="plan-subtitle">حضور رسمي مهيب وفائق السرعة للمؤسسات والشركات.</p>
+          </div>
+          <div class="price-box">
+            <div class="price-original">$1,800</div>
+            <div class="price-current">
+              <span class="currency">$</span>
+              <span class="amount">950</span>
+              <span class="period">/ مشروع</span>
+            </div>
+            <span class="savings-tag">وفر 47% لفترة محدودة</span>
+          </div>
+          <ul class="plan-features">
+            <li>✓ موقع تعريفي متكامل (5 إلى 7 صفحات مخصصة)</li>
+            <li>✓ تصميم عصري مخصص متوافق 100% مع الجوال</li>
+            <li>✓ تهيئة متقدمة لمحركات البحث (SEO Core)</li>
+            <li>✓ سرعة تحميل خيالية (Google Score +95)</li>
+            <li>✓ ربط دومين رسمي ونموذج تواصل مباشر مع واتساب</li>
+            <li>✓ لوحة تحكم سهلة لإدارة الأخبار والمحتوى</li>
+            <li>✓ ضمان جودة وصيانة مجانية لمدة 30 يوماً</li>
+          </ul>
+          <button class="btn btn-outline btn-block select-plan-btn" data-plan="باقة الهوية الرقمية للشركات ($950)">
+            اختر هذه الباقة
+          </button>
+        </div>
+
+        <!-- Plan 2 -->
+        <div class="pricing-card featured-plan">
+          <div class="popular-ribbon">الأكثر طلباً ومبيعاً</div>
+          <div class="plan-header">
+            <span class="plan-name">باقة المتجر الإلكتروني الاحترافي</span>
+            <p class="plan-subtitle">الحل المتكامل لمضاعفة مبيعات تجارتك الإلكترونية بأعلى معدل تحويل.</p>
+          </div>
+          <div class="price-box">
+            <div class="price-original">$3,400</div>
+            <div class="price-current">
+              <span class="currency">$</span>
+              <span class="amount">1,850</span>
+              <span class="period">/ متجر متكامل</span>
+            </div>
+            <span class="savings-tag">وفر 45% شامل الربط الكامل</span>
+          </div>
+          <ul class="plan-features">
+            <li>✓ متجر إلكتروني فائق السرعة (سلة / زد / Shopify / مخصص)</li>
+            <li>✓ ربط بوابات الدفع (مدى، Apple Pay، تمارا، تابي، فيزا)</li>
+            <li>✓ ربط شركات الشحن اللوجستي والتتبع الآلي للطلبات</li>
+            <li>✓ مسار شراء بنقرة واحدة (High Conversion Checkout)</li>
+            <li>✓ نظام تنبيهات وإشعارات الطلبات الفورية عبر واتساب</li>
+            <li>✓ تهيئة بكسلات التتبع الإعلاني (TikTok, Meta, Google)</li>
+            <li>✓ تدريب الفريق + ضمان صيانة مجاني 60 يوماً</li>
+          </ul>
+          <button class="btn btn-primary btn-block select-plan-btn" data-plan="باقة المتجر الإلكتروني الاحترافي ($1,850)">
+            ابدأ متجرك الاحترافي الآن
+          </button>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <span class="plan-name">معسكر الفل ستاك (Bootcamp)</span>
+            <p class="plan-subtitle">للمهتمين باحتراف البرمجة والانضمام لنخبة مهندسي الويب.</p>
+          </div>
+          <div class="price-box">
+            <div class="price-original">$1,200</div>
+            <div class="price-current">
+              <span class="currency">$</span>
+              <span class="amount">650</span>
+              <span class="period">/ 16 أسبوعاً</span>
+            </div>
+            <span class="savings-tag">خصم التسجيل المبكر (باقي 6 مقاعد)</span>
+          </div>
+          <ul class="plan-features">
+            <li>✓ 16 أسبوعاً من التدريب المكثف والتطبيق اليومي</li>
+            <li>✓ مسار شامل: React, Next.js, Node.js, PostgreSQL, Docker</li>
+            <li>✓ بناء 4 مشاريع تجارية متكاملة لحقيبتك البرمجية</li>
+            <li>✓ كود ريفيو ومراجعة تقنية أسبوعية مباشرة</li>
+            <li>✓ التحضير للمقابلات التقنية ومراجعة السيرة الذاتية</li>
+            <li>✓ شهادة تخرج رسمية معتمدة من بُنيان</li>
+            <li>✓ إمكانية تقسيط الرسوم على دفعتين</li>
+          </ul>
+          <a href="academy.html" class="btn btn-outline btn-block">
+            تفاصيل المعسكر والتسجيل
+          </a>
+        </div>
+      </div>
+
+      <!-- Enterprise Banner -->
+      <div class="enterprise-banner">
+        <div class="enterprise-content">
+          <div class="enterprise-icon">🏢</div>
+          <div>
+            <h3>هل تبحث عن نظام مخصص بالكامل لشركتك الكبرى؟</h3>
+            <p>نقدم استشارات ومعمارية برمجية متقدمة لتطوير منصات SaaS وأنظمة ERP ومشاريع التجارة الكبرى ذات المتطلبات المعقدة مع اتفاقية مستوى خدمة رسمية (SLA).</p>
+          </div>
+        </div>
+        <a href="https://wa.me/966500000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A8%D9%86%D9%8A%D8%A7%D9%86%D8%8C%20%D9%86%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B3%D8%B9%D9%8A%D8%B1%20%D9%86%D8%B8%D8%A7%D9%85%20%D9%85%D8%AE%D8%B5%D8%B5%20%D9%84%D8%B4%D8%B1%D9%83%D8%AA%D9%86%D8%A7" target="_blank" rel="noopener" class="btn btn-whatsapp-lg">
+          <span>تواصل معنا لتسعير مشروعك عبر واتساب 💬</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Interactive Configurator Tool (Toyota Build & Price style) -->
+    <section class="container" style="padding-bottom: 90px;" id="configurator">
+      <div class="calculator-box" id="costCalculator">
+        <div class="calc-header">
+          <span class="section-subtitle">أداة Build & Price</span>
+          <h2 style="font-size: 2rem; font-weight: 900; margin: 10px 0;">⚡ حاسبة التقدير الفوري وبناء مواصفات المشروع</h2>
+          <p>حدد متطلباتك التقنية لتحصل على تقدير فوري ومخصص لمشروعك، وشاركه مباشرة مع المهندس المشرف:</p>
+        </div>
+        <div class="calc-grid">
+          <div class="calc-field">
+            <label>1. نوع النظام الأساسي:</label>
+            <select id="calcType" class="calc-select">
+              <option value="950" data-name="موقع تعريفي للشركة">موقع تعريفي مؤسسي للشركة ($950)</option>
+              <option value="1850" data-name="متجر إلكتروني احترافي" selected>متجر إلكتروني متكامل عالي التحويل ($1,850)</option>
+              <option value="3200" data-name="نظام سحابي مخصص / SaaS">نظام سحابي مخصص / منصة SaaS ($3,200)</option>
+              <option value="650" data-name="معسكر الفل ستاك التدريبي">معسكر الفل ستاك التدريبي ($650)</option>
+            </select>
+          </div>
+
+          <div class="calc-field">
+            <label>2. الميزات والخدمات الإضافية:</label>
+            <div class="calc-checkboxes">
+              <label class="calc-check-label">
+                <input type="checkbox" class="calc-addon" value="250" data-name="بوابات دفع متعددة وتقسيط (تمارا/تابي)">
+                <span>بوابات دفع وتقسيط إضافية (+$250)</span>
+              </label>
+              <label class="calc-check-label">
+                <input type="checkbox" class="calc-addon" value="350" data-name="تطبيق جوال تفاعلي PWA">
+                <span>تطبيق جوال تفاعلي ويب PWA (+$350)</span>
+              </label>
+              <label class="calc-check-label">
+                <input type="checkbox" class="calc-addon" value="200" data-name="نظام إشعارات واتساب آلي للطلبات">
+                <span>أتمتة إشعارات واتساب للطلبات (+$200)</span>
+              </label>
+              <label class="calc-check-label">
+                <input type="checkbox" class="calc-addon" value="300" data-name="دعم فني وصيانة ممتدة لمدة سنة">
+                <span>ضمان وصيانة ممتدة لمدة سنة (+$300)</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="calc-result-box">
+            <span class="calc-total-label">التكلفة التقديرية الإجمالية:</span>
+            <div class="calc-total-price">
+              <span class="calc-currency">$</span>
+              <span id="calcTotalValue">1,850</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="calcSendWhatsApp">
+              إرسال المواصفات للواتساب وبدء التنفيذ 🚀
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Modal -->
+  <div class="modal-backdrop" id="projectModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeProjectModal" aria-label="إغلاق">✕</button>
+      <div class="modal-header">
+        <span class="modal-badge">طلب مشروع</span>
+        <h3 class="modal-title">لنصنع شيئاً استثنائياً معاً</h3>
+        <p class="modal-desc">املأ بيانات مشروعك وسنتواصل معك خلال أقل من ساعتين لمناقشة الخطة الهندسية والتكلفة بدقة.</p>
+      </div>
+      <form id="projectForm" class="modal-form">
+        <div class="form-group">
+          <label for="clientName">الاسم الكريم / اسم المنشأة *</label>
+          <input type="text" id="clientName" class="form-input" placeholder="اسمك أو اسم شركتك" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="clientPhone">رقم الجوال (واتساب) *</label>
+            <input type="tel" id="clientPhone" class="form-input" placeholder="05XXXXXXXX" required>
+          </div>
+          <div class="form-group">
+            <label for="clientEmail">البريد الإلكتروني</label>
+            <input type="email" id="clientEmail" class="form-input" placeholder="name@company.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="projectTypeSelect">نوع الخدمة المطلوبة *</label>
+          <select id="projectTypeSelect" class="form-input" required>
+            <option value="متجر إلكتروني احترافي">متجر إلكتروني احترافي عالي التحويل</option>
+            <option value="موقع رسمي للشركة">موقع رسمي للشركة أو المؤسسة</option>
+            <option value="نظام سحابي مخصص SaaS">نظام سحابي مخصص / منصة SaaS</option>
+            <option value="التسجيل في معسكر الفل ستاك">التسجيل في معسكر الفل ستاك (Bootcamp)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="projectDetails">تفاصيل ورؤية المشروع أو المتطلبات الخاصة:</label>
+          <textarea id="projectDetails" class="form-input form-textarea" rows="3" placeholder="نبذة عن متطلبات المشروع..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block btn-lg">
+          <span>إرسال الطلب والمتابعة الفورية 🚀</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-notification" id="toastNotification">
+    <div class="toast-icon">✓</div>
+    <div class="toast-text" id="toastMessage">تم استلام طلبك بنجاح!</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <div class="brand-logo footer-logo">
+          <div class="logo-text">
+            <span class="logo-title">B U N Y <span class="accent-letter">Λ</span> N</span>
+            <span class="logo-sub">بُنيان للحلول البرمجية والتجارة الإلكترونية</span>
+          </div>
+        </div>
+        <p class="footer-tagline">منصات برمجية متقدمة ومتاجر إلكترونية عالية التحويل ومعسكرات تدريبية تؤهل قادة التكنولوجيا المستقبليين.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">الصفحات والخدمات</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">خدماتنا والحلول</a></li>
+          <li><a href="portfolio.html">سابقة الأعمال</a></li>
+          <li><a href="academy.html">أكاديمية الفل ستاك</a></li>
+          <li><a href="pricing.html">التسعير وبناء المشروع</a></li>
+          <li><a href="process.html">كيف نعمل والسياسات</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">السياسات والضمانات</h4>
+        <ul class="footer-links">
+          <li><a href="process.html#revisions">سياسة التعديلات الرسمية</a></li>
+          <li><a href="process.html#warranty">ميثاق ضمان الجودة</a></li>
+          <li><a href="process.html#contract">شروط التعاقد والإلغاء</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">دعم التسعير</h4>
+        <p class="policy-note">هل تحتاج إلى استشارة لمشروع ضخم أو مناقصة تقنية؟ تواصل معنا مباشرة.</p>
+        <a href="https://wa.me/966500000000" target="_blank" rel="noopener" class="btn btn-whatsapp-lg" style="width: 100%; justify-content: center;">
+          <span>تواصل واتساب مباشر 💬</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 شركة بُنيان للحلول البرمجية والتجارة الإلكترونية (BUNYAN). جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js?v=3"></script>
+</body>
+</html>

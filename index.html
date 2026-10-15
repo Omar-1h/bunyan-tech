@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بُنيان للحلول البرمجية والتجارة الإلكترونية | BUNYAN Tech</title>
+  <meta name="description" content="شركة بُنيان لتطوير المواقع والمتاجر الإلكترونية المتقدمة، المنصات السحابية المخصصة SaaS، وأكاديمية معسكرات الفل ستاك. بنية معمارية عالمية وضمان صيانة معتمد.">
+  <meta name="keywords" content="تطوير مواقع, متاجر إلكترونية, برمجة ويب, سلة, زد, شوبيفاي, معسكر فل ستاك, كورس برمجة, Full Stack Bootcamp, BUNYAN">
+  
+  <!-- Favicon / SVG Brand Logo -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M30,15 L70,30 L70,70 L30,85 Z' fill='%23586FE0'/><path d='M30,35 L60,45 L60,65 L30,55 Z' fill='%238754E8'/><polygon points='40,50 48,43 54,48 54,55 48,60 40,55' fill='%23352A72'/><text x='50' y='53' font-size='10' font-family='monospace' fill='%238CCDF4' text-anchor='middle'>&lt;/&gt;</text></svg>">
+  
+  <!-- Fonts: Cairo (Arabic) & Plus Jakarta Sans (Latin / Numbers) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="index.css?v=4">
+</head>
+<body class="theme-dark">
+  <!-- Glowing Background Orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" id="announcementBar">
+    <div class="container announcement-content">
+      <span class="badge-pulse">معسكر 2026</span>
+      <p>🚀 فُتح باب التسجيل في <strong>معسكر بُنيان للفل ستاك الاحترافي (16 أسبوعاً)</strong> - مقاعد محدودة وخصم التسجيل المبكر متاح!</p>
+      <a href="academy.html" class="announcement-link">تفاصيل المعسكر والتسجيل ←</a>
+      <button class="announcement-close" id="closeAnnouncement" aria-label="إغلاق الإعلان">✕</button>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" id="brandLogo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <defs>
+              <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8CCDF4" />
+                <stop offset="50%" stop-color="#586FE0" />
+                <stop offset="100%" stop-color="#8754E8" />
+              </linearGradient>
+              <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#586FE0" />
+                <stop offset="100%" stop-color="#352A72" />
+              </linearGradient>
+              <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#A78BFA" />
+                <stop offset="100%" stop-color="#8754E8" />
+              </linearGradient>
+            </defs>
+            <path d="M42 16L78 34L78 86L42 104L42 16Z" fill="url(#primaryGrad)" />
+            <path d="M42 16L18 30L18 84L42 104L42 16Z" fill="url(#darkGrad)" opacity="0.85" />
+            <path d="M42 34L68 47L68 73L42 86L42 34Z" fill="url(#violetGrad)" />
+            <polygon points="60,50 72,56 72,68 60,74 48,68 48,56" fill="#352A72" stroke="#8CCDF4" stroke-width="1.5" />
+            <text x="60" y="66" fill="#FAFCFF" font-family="'Plus Jakarta Sans', monospace" font-size="11" font-weight="800" text-anchor="middle">&lt;/&gt;</text>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">B U N Y <span class="accent-letter">Λ</span> N</span>
+          <span class="logo-sub">بُنيان للحلول البرمجية والتجارة الإلكترونية</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link active">الرئيسية</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">خدماتنا والحلول</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">أعمالنا</a></li>
+          <li class="nav-item"><a href="academy.html" class="nav-link">الأكاديمية <span class="nav-pill">معسكر</span></a></li>
+          <li class="nav-item"><a href="process.html" class="nav-link">كيف نعمل والسياسات</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">التسعير وبناء المشروع</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action CTAs -->
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" title="تبديل المظهر الداكن/الفاتح">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <a href="https://wa.me/966500000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A8%D9%86%D9%8A%D8%A7%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%AD%D9%88%D9%84%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A" target="_blank" rel="noopener" class="btn-whatsapp-icon" title="محادثة واتساب مباشرة">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.187-.173.289l-.26.302c-.087.087-.177.18-.076.353.101.173.45 1.053 1.137 1.666.883.787 1.628 1.03 1.859 1.145.231.115.367.101.504-.058.138-.159.588-.684.745-.918.157-.234.314-.195.534-.115.22.08 1.397.659 1.637.779.24.12.399.18.457.28.058.1.058.58-.086.985z"/></svg>
+        </a>
+        <a href="pricing.html" class="btn btn-primary header-cta-btn">
+          <span>ابدأ&nbsp;مشروعك</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Toyota-Style Hero Gateway Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-icon">🛡️</span>
+            <span>معايير هندسية عالمية • ضمان صيانة 6 أشهر كاملة</span>
+          </div>
+          
+          <h1 class="hero-title">
+            منظومات برمجية تُشيَّد لتبقى <br>
+            <span class="text-gradient">وتقود نمو أعمالك في السوق الرقمي</span>
+          </h1>
+          
+          <p class="hero-desc">
+            في <strong>بُنيان</strong>، نمزج بين الهيبة المعمارية للأنظمة الكبرى والمرونة البيعية الذكية للمتاجر والمنصات السحابية SaaS. نعتمد تسليمات دقيقة بمواعيد صارمة، وندرّب قادة البرمجة المستقبليين.
+          </p>
+
+          <!-- Core KPIs Strip -->
+          <div class="hero-trust-row" style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px;">
+            <div class="hero-kpi-pill">
+              <strong class="kpi-val green">99/100</strong>
+              <span class="kpi-lbl">أداء Core Web Vitals</span>
+            </div>
+            <div class="hero-kpi-pill">
+              <strong class="kpi-val blue">6 أشهر</strong>
+              <span class="kpi-lbl">ضمان صيانة مجاني بالعقد</span>
+            </div>
+            <div class="hero-kpi-pill">
+              <strong class="kpi-val purple">+40</strong>
+              <span class="kpi-lbl">منصة حية بالإنتاج</span>
+            </div>
+          </div>
+
+          <!-- Hero Action CTAs -->
+          <div class="hero-actions">
+            <a href="pricing.html" class="btn btn-primary btn-lg">
+              <span>ابنِ وسعّر مشروعك (Build & Price)</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#lineup" class="btn btn-secondary btn-lg">
+              <span>استكشف تشكيلة الحلول</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 9l-7 7-7-7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero 3D Graphic Mockup -->
+        <div class="hero-visual">
+          <div class="visual-wrapper">
+            <div class="code-window">
+              <div class="window-header">
+                <div class="window-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="window-title">منظومة بُنيان السحابية الموحدة v4.0</div>
+                <div class="window-badge">بيئة معتمدة للإنتاج ⚡</div>
+              </div>
+              <div class="window-body">
+                <img src="assets/hero-mockup.jpg" alt="واجهة بنية أنظمة بُنيان البرمجية" class="hero-img-asset">
+              </div>
+            </div>
+
+            <!-- Floating Performance Card -->
+            <div class="floating-badge badge-speed">
+              <div class="badge-icon-wrap green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <div>
+                <span class="badge-val">0.6s</span>
+                <span class="badge-lbl">سرعة الاستجابة اللحظية</span>
+              </div>
+            </div>
+
+            <!-- Floating Warranty Card -->
+            <div class="floating-badge badge-client">
+              <div class="badge-icon-wrap violet">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <span class="badge-val">100%</span>
+                <span class="badge-lbl">عقد موثق مع ضمان صيانة</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Toyota-Style Solutions Lineup Selector -->
+    <section class="lineup-section" id="lineup">
+      <div class="container">
+        <div class="lineup-header">
+          <span class="section-tag">تشكيلة الحلول البرمجية</span>
+          <h2 class="section-title">
+            اختر فئة النظام المناسب <br>
+            <span class="text-gradient">واستعرض المواصفات والأسعار التقديرية</span>
+          </h2>
+          <p class="section-desc">
+            كما في أرقى المنصات العالمية؛ نقدم لك شفافية كاملة في تحديد مواصفات كل حزمة برمجية وتكلفتها التقديرية مع إمكانية التخصيص الفوري.
+          </p>
+        </div>
+
+        <!-- Lineup Tabs Menu -->
+        <div class="lineup-tabs-wrapper">
+          <div class="lineup-tabs" role="tablist">
+            <button class="lineup-tab-btn active" data-lineup="ecommerce">
+              <span>🛒</span>
+              <span>المتاجر الإلكترونية</span>
+            </button>
+            <button class="lineup-tab-btn" data-lineup="saas">
+              <span>☁️</span>
+              <span>الأنظمة السحابية والـ SaaS</span>
+            </button>
+            <button class="lineup-tab-btn" data-lineup="corporate">
+              <span>🏢</span>
+              <span>بوابات ومنصات الشركات</span>
+            </button>
+            <button class="lineup-tab-btn" data-lineup="academy">
+              <span>🎓</span>
+              <span>أكاديمية ومعسكر Full-Stack</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tab 1: E-Commerce Lineup -->
+        <div class="lineup-tab-content active" id="lineup-ecommerce">
+          <!-- Card 1 -->
+          <div class="lineup-card">
+            <span class="lineup-badge">الأكثر طلباً للشركات الناشئة</span>
+            <h3 class="lineup-card-title">متجر الانطلاق السريع (Starter E-Com)</h3>
+            <div class="lineup-price-tag">
+              $950 <span>/ يبدأ من</span>
+            </div>
+            <p class="lineup-card-desc">
+              متجر إلكتروني متكامل عالي السرعة مبني خصيصاً لزيادة معدل التحويل وسرعة إتمام الشراء.
+            </p>
+            <ul class="lineup-specs">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>ربط بوابات دفع (مدى، فيزا، Apple Pay، تابي/تمارا)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>ربط مباشر بشركات الشحن والتوصيل الآلي</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>لوحة تحكم ذكية لإدارة المنتجات والطلبات</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>ضمان صيانة ودعم فني 6 أشهر مجاناً</span>
+              </li>
+            </ul>
+            <div class="lineup-actions">
+              <a href="services.html#ecommerce" class="btn btn-secondary">عرض التفاصيل</a>
+              <a href="pricing.html?category=ecommerce" class="btn btn-primary">ابنِ وسعّر المتجر</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="lineup-card" style="border-color: var(--c-vibrant-violet);">
+            <span class="lineup-badge" style="background: rgba(135, 84, 232, 0.25); color: #C7D2FE;">الخيار الموصى به للمبيعات العالية</span>
+            <h3 class="lineup-card-title">متجر مخصص فائق الأداء (Headless Store)</h3>
+            <div class="lineup-price-tag">
+              $1,850 <span>/ يبدأ من</span>
+            </div>
+            <p class="lineup-card-desc">
+              بنية Next.js 14 مفصولة عن الـ Backend مع سرعة تحميل خارقة دون ثانية واحدة وتصميم مخصص لا مثيل له.
+            </p>
+            <ul class="lineup-specs">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>سرعة استجابة فائقة &lt; 0.8s ونتائج 99 في Lighthouse</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>محرك بحث وفلاتر فورية بالذكاء الاصطناعي</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>حماية سيبرانية وتكامل مخازن متعدد الفروع</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>ضمان شامل وعقد صيانة موثق</span>
+              </li>
+            </ul>
+            <div class="lineup-actions">
+              <a href="services.html#ecommerce" class="btn btn-secondary">عرض التفاصيل</a>
+              <a href="pricing.html?category=ecommerce" class="btn btn-primary">ابنِ وسعّر المتجر</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="lineup-card">
+            <span class="lineup-badge">للمشاريع والمجمعات الضخمة</span>
+            <h3 class="lineup-card-title">منصة تجارة متعددة التجار (Marketplace)</h3>
+            <div class="lineup-price-tag">
+              $2,800 <span>/ يبدأ من</span>
+            </div>
+            <p class="lineup-card-desc">
+              سوق إلكتروني متكامل يدعم تسجيل بائعين متعددين، محافظ رقمية، وتوزيع آلي للعمولات والإيرادات.
+            </p>
+            <ul class="lineup-specs">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>لوحة تحكم مستقلة لكل تاجر ومورد</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>محافظ مالية وتوزيع العمولات آلياً عبر API</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>تحمل آلاف الزيارات المتزامنة في وقت واحد</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>تأمين قواعد البيانات ونسخ احتياطي ساعي</span>
+              </li>
+            </ul>
+            <div class="lineup-actions">
+              <a href="services.html#ecommerce" class="btn btn-secondary">عرض التفاصيل</a>
+              <a href="pricing.html?category=ecommerce" class="btn btn-primary">ابنِ وسعّر المنصة</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: SaaS & Cloud Systems Lineup -->
+        <div class="lineup-tab-content" id="lineup-saas">
+          <!-- Card 1 -->
+          <div class="lineup-card">
+            <span class="lineup-badge">حلول السحابة B2B</span>
+            <h3 class="lineup-card-title">منصة اشتراكات مخصصة (SaaS Platform)</h3>
+            <div class="lineup-price-tag">
+              $2,200 <span>/ يبدأ من</span>
+            </div>
+            <p class="lineup-card-desc">
+              نظام سحابي مع بنية Multi-Tenant، إدارة اشتراكات دورية، بوابات دفع متكررة، ولوحات قيادة تحليلية.
+            </p>
+            <ul class="lineup-specs">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>نظام فوترة اشتراكات دوري متصل بـ Stripe وPaymob</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>صلاحيات دقيقة Role-Based Access Control</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>واجهات RESTful وGraphQL فائقة الأمان</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>ضمان صيانة 6 أشهر مع مراقبة الخوادم 24/7</span>
+              </li>
+            </ul>
+            <div class="lineup-actions">
+              <a href="services.html#saas" class="btn btn-secondary">عرض التفاصيل</a>
+              <a href="pricing.html?category=saas" class="btn btn-primary">ابنِ وسعّر النظام</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="lineup-card" style="border-color: var(--c-royal-blue);">
+            <span class="lineup-badge" style="background: rgba(88, 111, 224, 0.25); color: #FAFCFF;">أنظمة تخطيط الموارد المؤسسية</span>
+            <h3 class="lineup-card-title">نظام ERP مخصص لسلاسل الإمداد والمخازن</h3>
+            <div class="lineup-price-tag">
+              $3,200 <span>/ يبدأ من</span>
+            </div>
+            <p class="lineup-card-desc">
+              إدارة الفروع والمخازن، نقاط البيع السريعة POS، الفوترة المعتمدة من ZATCA، وتتبع الشاحنات اللوجستية.
+            </p>
+            <ul class="lineup-specs">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>تكامل رسمي كامل مع هيئة الزكاة والضريبة والجمارك</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>إدارة المخزون في الوقت الفعلي عبر عدة مدن ومستودعات</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>تقارير أرباح وخسائر وقوائم مالية آلية</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>تشفير بنكي كامل لكافة البيانات الحساسة</span>
+              </li>
+            </ul>
+            <div class="lineup-actions">
+              <a href="services.html#saas" class="btn btn-secondary">عرض التفاصيل</a>
+              <a href="pricing.html?category=saas" class="btn btn-primary">ابنِ وسعّر النظام</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="lineup-card">
+            <span class="lineup-badge">البنية التحتية والربط</span>
+            <h3 class="lineup-card-title">محركات الميكروسيرفس وحلول الـ API</h3>
+            <div class="lineup-price-tag">
+              $1,400 <span>/ يبدأ من</span>
+            </div>
+            <p class="lineup-card-desc">
+              تطوير خدمات خلفية Microservices عالية السرعة قادرة على معالجة ملايين الطلبات المتزامنة مع كاشينج Redis.
+            </p>
+            <ul class="lineup-specs">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>معالجة حتى 20,000 طلب في الثانية بثبات كامل</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>ربط الأنظمة القديمة Legacy ببيئات سحابية حديثة</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>حاويات Docker ونشر تلقائي CI/CD عبر GitHub</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>توثيق برمجي تفاعلي Swagger متاح للمطورين</span>
+              </li>
+            </ul>
+            <div class="lineup-actions">
+              <a href="services.html#saas" class="btn btn-secondary">عرض التفاصيل</a>
+              <a href="pricing.html?category=saas" class="btn btn-primary">ابنِ وسعّر الـ API</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Corporate Platforms Lineup -->
+        <div class="lineup-tab-content" id="lineup-corporate">
+          <!-- Card 1 -->
+          <div class="lineup-card">
+            <span class="lineup-badge">الهيبة المؤسسية</span>
+            <h3 class="lineup-card-title">البوابة الرسمية للشركات القابضة</h3>
+            <div class="lineup-price-tag">
+              $1,100 <span>/ يبدأ من</span>
+            </div>
+            <p class="lineup-card-desc">
+              تصميم يعكس ثقل الشركة الاستثماري، يدعم لغات متعددة، تقارير مجلس الإدارة، ولوحة قيادة للمحتوى.
+            </p>
+            <ul class="lineup-specs">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>واجهة تفاعلية ثلاثية الأبعاد تعزز ثقة المستثمرين</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>دعم كامل للغتين العربية والإنجليزية مع RTL تلقائي</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>حماية عالية ضد هجمات DDoS عبر Cloudflare</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>ضمان صيانة 6 أشهر مع تدريب مجاني لفريقك</span>
+              </li>
+            </ul>
+            <div class="lineup-actions">
+              <a href="services.html#corporate" class="btn btn-secondary">عرض التفاصيل</a>
+              <a href="pricing.html?category=corporate" class="btn btn-primary">ابنِ وسعّر البوابة</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="lineup-card">
+            <span class="lineup-badge">الخدمات الطبية والاستشارية</span>
+            <h3 class="lineup-card-title">منصة الحجوزات وإدارة العيادات</h3>
+            <div class="lineup-price-tag">
+              $1,650 <span>/ يبدأ من</span>
+            </div>
+            <p class="lineup-card-desc">
+              جدولة مواعيد دقيقة، إشعارات تلقائية عبر واتساب وSMS، ملفات عملاء مؤمنة، والدفع الإلكتروني المسبق.
+            </p>
+            <ul class="lineup-specs">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>تقويم ذكي يمنع تضارب المواعيد للممارسين</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>تذكير تلقائي للعملاء يقلل نسبة التخلف عن الحضور بنسبة 70%</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>حفظ تاريخ الاستشارات والملفات الطبية بأمان تام</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>دعم فني وضمان صيانة 6 أشهر كاملة</span>
+              </li>
+            </ul>
+            <div class="lineup-actions">
+              <a href="services.html#corporate" class="btn btn-secondary">عرض التفاصيل</a>
+              <a href="pricing.html?category=corporate" class="btn btn-primary">ابنِ وسعّر المنصة</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="lineup-card">
+            <span class="lineup-badge">بوابات المشتركين</span>
+            <h3 class="lineup-card-title">بوابة المحتوى والأعضاء الحصرية</h3>
+            <div class="lineup-price-tag">
+              $1,350 <span>/ يبدأ من</span>
+            </div>
+            <p class="lineup-card-desc">
+              منصة عضوية مخصصة، تحميل مستندات وفيديوهات بأذونات أمنية، واشتراكات مدفوعة مع مساحات نقاش تفاعلية.
+            </p>
+            <ul class="lineup-specs">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>محتوى مقفل للمشتركين فقط بحماية مادية ضد التحميل غير المصرح</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>لوحة قيادة لمتابعة نشاط وتفاعل الأعضاء</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>دعم تجديد العضويات والتنبيه التلقائي قبل الانتهاء</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>ضمان برمجي شامل 6 أشهر من بُنيان</span>
+              </li>
+            </ul>
+            <div class="lineup-actions">
+              <a href="services.html#corporate" class="btn btn-secondary">عرض التفاصيل</a>
+              <a href="pricing.html?category=corporate" class="btn btn-primary">ابنِ وسعّر البوابة</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Full-Stack Academy Lineup -->
+        <div class="lineup-tab-content" id="lineup-academy">
+          <!-- Card 1 -->
+          <div class="lineup-card" style="border-color: #F59E0B;">
+            <span class="lineup-badge" style="background: rgba(245, 158, 11, 0.2); color: #FBBF24;">المعسكر الأقوى للتوظيف الفوري</span>
+            <h3 class="lineup-card-title">معسكر Full-Stack الاحترافي (16 أسبوعاً)</h3>
+            <div class="lineup-price-tag">
+              $499 <span style="text-decoration: line-through; opacity: 0.6; margin-right: 6px;">$899</span> <span>/ للمقعد الواحد</span>
+            </div>
+            <p class="lineup-card-desc">
+              برنامج عملي تطبيقي مكثف يركز على بناء مشاريع حقيقية لسوق العمل (React, Node.js, Next.js, Postgres, Docker).
+            </p>
+            <ul class="lineup-specs">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>16 أسبوعاً من التطبيق المباشر والمشاريع الجماعية</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>بناء 4 مشاريع إنتاجية كاملة تُضاف إلى ملف أعمالك</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>مراجعات كود فردية 1-on-1 مع كبار المهندسين</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>شهادة تخرج معتمدة وتجهيز للمقابلات الوظيفية</span>
+              </li>
+            </ul>
+            <div class="lineup-actions">
+              <a href="academy.html" class="btn btn-secondary">منهاج المعسكر الكامل</a>
+              <a href="academy.html#enroll" class="btn btn-primary" style="background: linear-gradient(135deg, #F59E0B, #D97706);">احجز مقعدك الآن</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="lineup-card">
+            <span class="lineup-badge">الإرشاد والجاهزية الوظيفية</span>
+            <h3 class="lineup-card-title">المحاكاة الوظيفية والمقابلات التقنية</h3>
+            <div class="lineup-price-tag">
+              مشمول مجاناً <span>/ لطلاب المعسكر</span>
+            </div>
+            <p class="lineup-card-desc">
+              جلسات تدريب حية على مقابلات الشركات الكبرى، حل مسائل LeetCode، وصياغة سيرة ذاتية وحساب GitHub يلفت أنظار مسؤولي التوظيف.
+            </p>
+            <ul class="lineup-specs">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>محاكاة مقابلات تقنية حقيقية مع أسئلة خوارزميات وتصميم نظم</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>تدقيق حساب LinkedIn وملف GitHub والـ Portfolio</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>توصية مباشرة للشركات التقنية الشريكة لبُنيان</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>دعم مهني مستمر حتى توقيع عقدك الأول</span>
+              </li>
+            </ul>
+            <div class="lineup-actions">
+              <a href="academy.html#career" class="btn btn-secondary">تفاصيل الإرشاد</a>
+              <a href="academy.html#enroll" class="btn btn-primary">انضم للمعسكر</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="lineup-card">
+            <span class="lineup-badge">تدريب الشركات والفرق</span>
+            <h3 class="lineup-card-title">معسكر مخصص لفرق الشركات (Corporate Training)</h3>
+            <div class="lineup-price-tag">
+              حسب الحجم <span>/ تسعير مخصص</span>
+            </div>
+            <p class="lineup-card-desc">
+              تأهيل وتطوير مهارات الفريق التقني لشركتك على أحدث تقنيات الـ Microservices وتطوير الواجهات الحديثة واختبارات الجودة.
+            </p>
+            <ul class="lineup-specs">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>منهاج تدريبي مصمم خصيصاً لاحتياجات مشاريع شركتك</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>تطبيق عملي على الكود الفعلي للشركة وتحديث البنية</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>تقارير تقييم دورية لأداء كل مهندس ومطور</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>شهادات إنجاز معتمدة صادرة من بُنيان</span>
+              </li>
+            </ul>
+            <div class="lineup-actions">
+              <a href="contact.html?type=training" class="btn btn-secondary">طلب عرض سعر لشركتك</a>
+              <a href="https://wa.me/966500000000?text=مرحباً بُنيان، نرغب بتدريب فريقنا التقني" class="btn btn-primary">محادثة واتساب</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Why Bunyan? (Toyota-Grade Reliability & Guarantees) -->
+    <section class="subpage-section" style="background: rgba(12, 8, 30, 0.4); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass);">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">معايير الجودة والاطمئنان</span>
+          <h2 class="section-title">
+            لماذا يثق بنا رواد الأعمال والشركات؟ <br>
+            <span class="text-gradient">أربع ركائز هندسية لا نساوم عليها</span>
+          </h2>
+          <p class="section-desc">
+            في سوق تملؤه الوعود المؤقتة، تبني بُنيان علاقتها معك على أسس تعاقدية صارمة، كود عالمي الجودة، وضمانات مكتوبة تحمي استثمارك بالكامل.
+          </p>
+        </div>
+
+        <div class="features-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px;">
+          <div class="feature-card" style="padding: 24px;">
+            <div class="feature-icon-box" style="margin-bottom: 16px; font-size: 1.8rem;">💎</div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--c-ice-white); margin-bottom: 8px;">هندسة معمارية نظيفة</h3>
+            <p style="font-size: 0.88rem; color: var(--c-soft-gray); line-height: 1.6; margin: 0;">
+              كود منظم، قابل للتوسع المستقبلي بسهولة دون الحاجة لإعادة كتابة النظام عند نمو عملائك.
+            </p>
+          </div>
+
+          <div class="feature-card" style="padding: 24px;">
+            <div class="feature-icon-box" style="margin-bottom: 16px; font-size: 1.8rem;">🛡️</div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--c-ice-white); margin-bottom: 8px;">ضمان صيانة 6 أشهر مجاناً</h3>
+            <p style="font-size: 0.88rem; color: var(--c-soft-gray); line-height: 1.6; margin: 0;">
+              بند رسمي في العقد يضمن إصلاح أي خلل برمجي أو تحديث أمني غير متوافق فوراً وبدون أي رسوم إضافية.
+            </p>
+          </div>
+
+          <div class="feature-card" style="padding: 24px;">
+            <div class="feature-icon-box" style="margin-bottom: 16px; font-size: 1.8rem;">⚖️</div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--c-ice-white); margin-bottom: 8px;">سياسة تعديلات شفافة</h3>
+            <p style="font-size: 0.88rem; color: var(--c-soft-gray); line-height: 1.6; margin: 0;">
+              جولتان كاملتان من التعديلات في كل مرحلة تسليم. لن تُفاجأ أبداً بأي تكاليف خفية خارج نطاق العقد.
+            </p>
+          </div>
+
+          <div class="feature-card" style="padding: 24px;">
+            <div class="feature-icon-box" style="margin-bottom: 16px; font-size: 1.8rem;">⏱️</div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--c-ice-white); margin-bottom: 8px;">التزام بالمواعيد ومراحل الدفع</h3>
+            <p style="font-size: 0.88rem; color: var(--c-soft-gray); line-height: 1.6; margin: 0;">
+              تقسيم المشروع لمراحل تسليم واضحة (Milestones)، ولا يتم الانتقال لمرحلة إلا بعد موافقتك واعتمادك.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="process.html" class="btn btn-secondary">
+            <span>اطلع على منهجية العمل والسياسات الرسمية بالتفصيل ←</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Featured Case Studies Strip -->
+    <section class="subpage-section">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <span class="section-tag">نماذج من أعمالنا</span>
+            <h2 class="section-title" style="margin-bottom: 6px; text-align: right;">
+              إنجازات صنعت الفارق لعملائنا
+            </h2>
+            <p style="color: var(--c-soft-gray); margin: 0; font-size: 0.95rem;">
+              شاهد كيف حوّلنا التحديات التقنية المعقدة إلى منصات رقمية مربحة وفائقة السرعة.
+            </p>
+          </div>
+          <a href="portfolio.html" class="btn btn-secondary">
+            <span>استعرض جميع المشاريع (Portfolio)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="portfolio-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-img-frame" style="height: 200px; background: linear-gradient(135deg, #181236, #352A72); display: flex; align-items: center; justify-content: center; position: relative;">
+              <span style="font-size: 3rem;">👗</span>
+              <span class="category-badge" style="position: absolute; top: 12px; right: 12px; background: rgba(88, 111, 224, 0.4); backdrop-filter: blur(8px); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; color: #FAFCFF;">متجر إلكتروني</span>
+            </div>
+            <div class="project-info" style="padding: 20px;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--c-ice-white); margin-bottom: 6px;">منصة متجر ريفا فاشن</h3>
+              <p style="font-size: 0.88rem; color: var(--c-soft-gray); line-height: 1.5; margin-bottom: 16px;">
+                متجر إلكتروني متقدم للملابس مع تجربة تصفح فائقة السرعة، بوابات دفع تابي وتمارا، وتكامل مخزون دقيق.
+              </p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 12px;">
+                <span style="color: #34D399; font-weight: 700; font-size: 0.9rem;">+320% نمو في المبيعات</span>
+                <a href="portfolio.html" style="color: var(--c-sky-blue); font-size: 0.85rem; font-weight: 700;">تفاصيل المشروع ←</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-img-frame" style="height: 200px; background: linear-gradient(135deg, #1A103C, #8754E8); display: flex; align-items: center; justify-content: center; position: relative;">
+              <span style="font-size: 3rem;">📦</span>
+              <span class="category-badge" style="position: absolute; top: 12px; right: 12px; background: rgba(88, 111, 224, 0.4); backdrop-filter: blur(8px); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; color: #FAFCFF;">نظام SaaS ERP</span>
+            </div>
+            <div class="project-info" style="padding: 20px;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--c-ice-white); margin-bottom: 6px;">نظام Nexus Cloud ERP</h3>
+              <p style="font-size: 0.88rem; color: var(--c-soft-gray); line-height: 1.5; margin-bottom: 16px;">
+                لوحة تحكم سحابية لسلاسل الإمداد، الفوترة المعتمدة من ZATCA، وتتبع أسطول الشاحنات لحظياً.
+              </p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 12px;">
+                <span style="color: #34D399; font-weight: 700; font-size: 0.9rem;">أتمتة 85% من الإجراءات</span>
+                <a href="portfolio.html" style="color: var(--c-sky-blue); font-size: 0.85rem; font-weight: 700;">تفاصيل المشروع ←</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-img-frame" style="height: 200px; background: linear-gradient(135deg, #0D1630, #586FE0); display: flex; align-items: center; justify-content: center; position: relative;">
+              <span style="font-size: 3rem;">🏛️</span>
+              <span class="category-badge" style="position: absolute; top: 12px; right: 12px; background: rgba(88, 111, 224, 0.4); backdrop-filter: blur(8px); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; color: #FAFCFF;">بوابة شركات</span>
+            </div>
+            <div class="project-info" style="padding: 20px;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--c-ice-white); margin-bottom: 6px;">بوابة كابيتال القابضة</h3>
+              <p style="font-size: 0.88rem; color: var(--c-soft-gray); line-height: 1.5; margin-bottom: 16px;">
+                بوابة مؤسسية رسمية متعددة اللغات لشركة استثمارية مع غرفة تقارير مالية وتأمين سحابي مشدد.
+              </p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 12px;">
+                <span style="color: #34D399; font-weight: 700; font-size: 0.9rem;">أداء 98/100 Core Web</span>
+                <a href="portfolio.html" style="color: var(--c-sky-blue); font-size: 0.85rem; font-weight: 700;">تفاصيل المشروع ←</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Toyota-Style "Build & Price" Interactive Tool Teaser Banner -->
+    <section class="banner-cta-section" style="padding: 80px 0; background: radial-gradient(circle at center, rgba(88, 111, 224, 0.25) 0%, rgba(53, 42, 114, 0.5) 70%, rgba(12, 8, 30, 0.9) 100%); border-top: 1px solid var(--border-glass);">
+      <div class="container text-center">
+        <div style="display: inline-block; padding: 6px 18px; border-radius: var(--radius-full); background: rgba(140, 205, 244, 0.15); color: #8CCDF4; font-weight: 700; font-size: 0.88rem; margin-bottom: 16px; border: 1px solid rgba(140, 205, 244, 0.3);">
+          ⚡ حاسبة بناء وتسعير المشروع التفاعلية (Build & Price)
+        </div>
+        <h2 style="font-size: 2.2rem; font-weight: 900; margin-bottom: 14px; color: var(--c-ice-white);">
+          صمّم مواصفات مشروعك، واعرف التكلفة التقديرية <br>
+          <span class="text-gradient">بدقة وشفافية خلال دقيقة واحدة</span>
+        </h2>
+        <p style="color: #C7D2FE; max-width: 700px; margin: 0 auto 32px; font-size: 1.05rem; line-height: 1.7;">
+          اختر نوع المشروع (متجر، نظام SaaS، موقع شركات)، حدد الإضافات وبوابات الدفع ومستوى الحماية، وشاهد السعر والمدة التقديرية تتحدّث لحظياً أمامك!
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="pricing.html" class="btn btn-primary btn-lg" style="font-size: 1.1rem; padding: 16px 36px;">
+            <span>جرّب أداة Build & Price الآن</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="contact.html" class="btn btn-secondary btn-lg" style="font-size: 1.1rem; padding: 16px 32px;">
+            <span>تحدث مع مستشار تقني مجاناً</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Multi-Page Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <!-- Col 1: Brand Info -->
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <div class="logo-text">
+            <span class="logo-title">B U N Y <span class="accent-letter">Λ</span> N</span>
+            <span class="logo-sub">بُنيان للحلول البرمجية والتجارة الإلكترونية</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          شركة هندسية رائدة متخصصة في تشييد المتاجر المتقدمة، المنصات السحابية SaaS، وأنظمة ERP المؤسسية، بالإضافة لمعسكرات الفل ستاك لتأهيل نخبة المهندسين المحترفين.
+        </p>
+        <div class="footer-contact-actions" style="margin-top: 16px;">
+          <a href="https://wa.me/966500000000" target="_blank" rel="noopener" class="btn-whatsapp-icon" title="محادثة واتساب مباشرة">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.187-.173.289l-.26.302c-.087.087-.177.18-.076.353.101.173.45 1.053 1.137 1.666.883.787 1.628 1.03 1.859 1.145.231.115.367.101.504-.058.138-.159.588-.684.745-.918.157-.234.314-.195.534-.115.22.08 1.397.659 1.637.779.24.12.399.18.457.28.058.1.058.58-.086.985z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Services Directory -->
+      <div class="footer-col">
+        <h4 class="footer-heading">الحلول والخدمات</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#ecommerce">تطوير المتاجر الإلكترونية</a></li>
+          <li><a href="services.html#saas">المنصات السحابية والـ SaaS</a></li>
+          <li><a href="services.html#corporate">مواقع وبوابات الشركات</a></li>
+          <li><a href="services.html#uiux">هندسة الواجهات وتجربة المستخدم</a></li>
+          <li><a href="services.html#cloud">البنية التحتية والميكروسيرفس</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Academy & Tools -->
+      <div class="footer-col">
+        <h4 class="footer-heading">الأكاديمية والشفافية</h4>
+        <ul class="footer-links">
+          <li><a href="academy.html">معسكر الفل ستاك (16 أسبوعاً)</a></li>
+          <li><a href="pricing.html">حاسبة الأسعار وبناء المشروع</a></li>
+          <li><a href="portfolio.html">معرض المشاريع وقصص النجاح</a></li>
+          <li><a href="process.html">منهجية العمل وضمان الصيانة</a></li>
+          <li><a href="contact.html">احجز استشارة تقنية مجانية</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Guarantees & Credentials -->
+      <div class="footer-col">
+        <h4 class="footer-heading">ضمانات الاعتماد</h4>
+        <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; color: #8CCDF4;">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span>🛡️</span> <span>عقود قانونية موثقة ومراحل إنجاز</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span>🔧</span> <span>6 أشهر صيانة وتحديثات مجانية</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span>⚡</span> <span>كود نظيف وسرعة 99/100 معتمدة</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span>🔒</span> <span>اتفاقية سرية معلومات (NDA) فورية</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="container footer-bottom">
+      <p class="copyright">© 2026 شركة بُنيان للحلول البرمجية والتجارة الإلكترونية. جميع الحقوق محفوظة.</p>
+      <div class="footer-meta-tags">
+        <span>موقع متعدد الصفحات</span>
+        <span>معمارية مستوحاة من Toyota</span>
+        <span>بناء وتسعير تفاعلي</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <span class="toast-icon">✨</span>
+    <span class="toast-message" id="toastMessage">تم التحديث بنجاح</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
