@@ -4218,16 +4218,19 @@ html, body {
 /* 1. Why Bunyan Section */
 .why-bunyan-section {
   padding: 115px 0 120px !important;
-  background: rgba(12, 8, 30, 0.45);
-  border-top: 1px solid var(--border-glass);
-  border-bottom: 1px solid var(--border-glass);
+  background: radial-gradient(circle at 50% 25%, rgba(99, 102, 241, 0.16) 0%, rgba(139, 92, 246, 0.10) 45%, transparent 75%),
+              linear-gradient(180deg, #F5F3FF 0%, #EEF2FF 50%, #F8FAFC 100%) !important;
+  border-top: 1.5px solid #C7D2FE !important;
+  border-bottom: 1.5px solid #C7D2FE !important;
   position: relative;
 }
 
 body.theme-light .why-bunyan-section {
-  background: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 50%, #F8FAFC 100%) !important;
-  border-top: 1px solid #E2E8F0 !important;
-  border-bottom: 1px solid #E2E8F0 !important;
+  background: radial-gradient(circle at 50% 25%, rgba(99, 102, 241, 0.16) 0%, rgba(139, 92, 246, 0.10) 45%, transparent 75%),
+              linear-gradient(180deg, #F5F3FF 0%, #EEF2FF 50%, #F8FAFC 100%) !important;
+  border-top: 1.5px solid #C7D2FE !important;
+  border-bottom: 1.5px solid #C7D2FE !important;
+  box-shadow: inset 0 1px 0 #FFFFFF, inset 0 -1px 0 #FFFFFF;
 }
 
 .why-bunyan-section .section-header {
