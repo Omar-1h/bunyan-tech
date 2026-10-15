@@ -4,36 +4,10 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // ================= 1. THEME SWITCHER (Dark / Light) =================
-  const themeToggle = document.getElementById('themeToggle');
-  const themeIcon = themeToggle?.querySelector('.theme-icon');
-  const currentTheme = localStorage.getItem('bunyan_theme') || 'dark';
-
-  if (currentTheme === 'light') {
-    document.body.classList.remove('theme-dark');
-    document.body.classList.add('theme-light');
-    if (themeIcon) themeIcon.textContent = '☀️';
-  } else {
-    document.body.classList.add('theme-dark');
-    document.body.classList.remove('theme-light');
-    if (themeIcon) themeIcon.textContent = '🌙';
-  }
-
-  themeToggle?.addEventListener('click', () => {
-    if (document.body.classList.contains('theme-dark')) {
-      document.body.classList.remove('theme-dark');
-      document.body.classList.add('theme-light');
-      localStorage.setItem('bunyan_theme', 'light');
-      if (themeIcon) themeIcon.textContent = '☀️';
-      showToast('تم تفعيل المظهر الفاتح');
-    } else {
-      document.body.classList.add('theme-dark');
-      document.body.classList.remove('theme-light');
-      localStorage.setItem('bunyan_theme', 'dark');
-      if (themeIcon) themeIcon.textContent = '🌙';
-      showToast('تم تفعيل المظهر الداكن الملكي');
-    }
-  });
+  // ================= 1. PERMANENT CORPORATE THEME (Toyota-Inspired Clean White) =================
+  document.body.classList.remove('theme-dark');
+  document.body.classList.add('theme-light');
+  localStorage.setItem('bunyan_theme', 'light');
 
   // ================= 2. STICKY HEADER & SCROLL SPY =================
   const siteHeader = document.getElementById('siteHeader');

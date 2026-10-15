@@ -39,38 +39,22 @@
 
 /* ================= THEMES ================= */
 
-/* Dark Theme (Default - Luxurious High-Tech Indigo) */
-body.theme-dark {
-  --bg-primary: #0C081E;
-  --bg-secondary: #140E31;
-  --bg-card: rgba(28, 20, 68, 0.65);
-  --bg-card-hover: rgba(43, 31, 105, 0.75);
-  --bg-glass: rgba(19, 13, 48, 0.7);
-  --border-glass: rgba(140, 205, 244, 0.15);
-  --border-focus: #7898E8;
-  --text-primary: #FAFCFF;
-  --text-secondary: #B9C6E8;
-  --text-muted: #8392B7;
-  --accent-glow: rgba(135, 84, 232, 0.35);
-  --nav-bg: rgba(12, 8, 30, 0.85);
-  --card-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
-  --card-border-glow: 0 0 30px rgba(88, 111, 224, 0.15);
-}
-
-/* Light Theme (Clean Ice White & Soft Gray) */
+/* Clean Corporate Luxury Theme (Toyota-Grade White Default) */
+:root,
+body,
 body.theme-light {
   --bg-primary: #FAFCFF;
   --bg-secondary: #F3F6FD;
   --bg-card: #FFFFFF;
   --bg-card-hover: #F8FAFF;
-  --bg-glass: rgba(255, 255, 255, 0.85);
-  --border-glass: rgba(88, 111, 224, 0.18);
+  --bg-glass: rgba(255, 255, 255, 0.9);
+  --border-glass: rgba(88, 111, 224, 0.16);
   --border-focus: #586FE0;
   --text-primary: #181236;
   --text-secondary: #334155;
   --text-muted: #475569;
-  --accent-glow: rgba(88, 111, 224, 0.18);
-  --nav-bg: rgba(250, 252, 255, 0.95);
+  --accent-glow: rgba(88, 111, 224, 0.15);
+  --nav-bg: rgba(250, 252, 255, 0.96);
   --card-shadow: 0 16px 40px rgba(53, 42, 114, 0.08);
   --card-border-glow: 0 0 20px rgba(88, 111, 224, 0.08);
 }
@@ -132,10 +116,10 @@ img {
 .bg-orb {
   position: fixed;
   border-radius: 50%;
-  filter: blur(120px);
+  filter: blur(140px);
   pointer-events: none;
   z-index: -1;
-  opacity: 0.55;
+  opacity: 0.08;
   transition: opacity var(--transition-smooth);
 }
 
@@ -409,24 +393,7 @@ img {
 }
 
 .theme-toggle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--bg-card);
-  border: 1px solid var(--border-glass);
-  color: var(--text-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  transition: all var(--transition-fast);
-  flex-shrink: 0;
-}
-
-.theme-toggle:hover {
-  transform: scale(1.08);
-  border-color: var(--c-sky-blue);
-  box-shadow: 0 0 15px var(--accent-glow);
+  display: none !important;
 }
 
 .btn-whatsapp-icon {
