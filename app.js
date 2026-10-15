@@ -49,15 +49,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mainNav = document.getElementById('mainNav');
 
-  mobileMenuBtn?.addEventListener('click', () => {
+  mobileMenuBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
     mainNav?.classList.toggle('open');
+    mobileMenuBtn?.classList.toggle('open');
   });
 
   // Close mobile menu on link click
   document.querySelectorAll('.main-nav .nav-link').forEach(link => {
     link.addEventListener('click', () => {
       mainNav?.classList.remove('open');
+      mobileMenuBtn?.classList.remove('open');
     });
+  });
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (mainNav?.classList.contains('open') && !mainNav.contains(e.target) && !mobileMenuBtn?.contains(e.target)) {
+      mainNav.classList.remove('open');
+      mobileMenuBtn?.classList.remove('open');
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mainNav?.classList.contains('open')) {
+      mainNav.classList.remove('open');
+      mobileMenuBtn?.classList.remove('open');
+    }
   });
 
   // Announcement Bar Close
