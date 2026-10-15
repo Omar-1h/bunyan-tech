@@ -2345,14 +2345,18 @@ body.theme-light .calc-total-price {
 }
 
 /* ================= FOOTER & OFFICIAL POLICIES ================= */
-.site-footer {
-  background: #080514;
-  color: #FAFCFF;
-  border-top: 1px solid var(--border-glass);
+.site-footer,
+body.theme-light .site-footer {
+  background: #080514 !important;
+  color: #FAFCFF !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
   padding: 80px 0 0;
+  position: relative;
+  z-index: 10;
 }
 
-.footer-grid {
+.footer-grid,
+.footer-inner {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
   gap: 40px;
@@ -2363,85 +2367,142 @@ body.theme-light .calc-total-price {
   margin-bottom: 18px;
 }
 
-.footer-tagline {
-  font-size: 0.92rem;
-  color: #8392B7;
-  line-height: 1.7;
-  margin-bottom: 22px;
+.site-footer .logo-title,
+body.theme-light .site-footer .logo-title {
+  color: #FFFFFF !important;
 }
 
-.footer-contact-info div {
-  font-size: 0.86rem;
-  color: #B9C6E8;
-  margin-bottom: 8px;
+.site-footer .logo-sub,
+body.theme-light .site-footer .logo-sub {
+  color: #93C5FD !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  display: block;
+  margin-top: 4px;
 }
 
-.footer-col-title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #FAFCFF;
+/* Footer Descriptions & Paragraphs - Crystal Clear Contrast */
+.site-footer p,
+.site-footer .footer-desc,
+.site-footer .footer-tagline,
+.site-footer .policy-note,
+body.theme-light .site-footer p,
+body.theme-light .site-footer .footer-desc,
+body.theme-light .site-footer .footer-tagline,
+body.theme-light .site-footer .policy-note {
+  font-size: 0.94rem !important;
+  color: #E2E8F0 !important;
+  line-height: 1.8 !important;
+  font-weight: 500 !important;
   margin-bottom: 20px;
-  position: relative;
-  padding-bottom: 10px;
 }
 
-.footer-col-title::after {
+/* Contact info in footer */
+.site-footer .footer-contact-info div,
+body.theme-light .site-footer .footer-contact-info div {
+  font-size: 0.9rem !important;
+  color: #F1F5F9 !important;
+  margin-bottom: 10px;
+  font-weight: 500 !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Headings in Footer - Pure Bright White with Accent Bar */
+.site-footer h4,
+.site-footer .footer-heading,
+.site-footer .footer-col-title,
+body.theme-light .site-footer h4,
+body.theme-light .site-footer .footer-heading,
+body.theme-light .site-footer .footer-col-title {
+  font-size: 1.15rem !important;
+  font-weight: 800 !important;
+  color: #FFFFFF !important;
+  margin-bottom: 22px !important;
+  position: relative;
+  padding-bottom: 12px;
+  letter-spacing: -0.2px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.site-footer .footer-heading::after,
+.site-footer .footer-col-title::after,
+body.theme-light .site-footer .footer-heading::after,
+body.theme-light .site-footer .footer-col-title::after {
   content: '';
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 30px;
-  height: 2px;
-  background: var(--c-royal-blue);
+  width: 34px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #38BDF8, #818CF8);
 }
 
-.footer-links li {
-  margin-bottom: 10px;
+/* Navigation Links in Footer */
+.site-footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.footer-links a {
-  font-size: 0.9rem;
-  color: #8392B7;
+.site-footer .footer-links li,
+.site-footer .footer-policy-links li {
+  margin-bottom: 12px;
 }
 
-.footer-links a:hover {
-  color: var(--c-sky-blue);
-  transform: translateX(-4px);
+.site-footer .footer-links a,
+.site-footer .footer-policy-links a,
+body.theme-light .site-footer .footer-links a,
+body.theme-light .site-footer .footer-policy-links a {
+  font-size: 0.94rem !important;
+  color: #CBD5E1 !important;
+  font-weight: 500 !important;
   display: inline-block;
+  transition: all 0.2s ease;
+  text-decoration: none;
 }
 
-.policy-note {
-  font-size: 0.85rem;
-  color: #8392B7;
-  margin-bottom: 14px;
-  line-height: 1.5;
+.site-footer .footer-links a:hover,
+.site-footer .footer-policy-links a:hover,
+body.theme-light .site-footer .footer-links a:hover,
+body.theme-light .site-footer .footer-policy-links a:hover {
+  color: #38BDF8 !important;
+  transform: translateX(-5px);
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
 }
 
-.footer-policy-links li {
-  margin-bottom: 8px;
-}
-
-.policy-trigger {
-  font-size: 0.88rem;
-  color: #B9C6E8;
+.site-footer .policy-trigger,
+body.theme-light .site-footer .policy-trigger {
+  font-size: 0.92rem !important;
+  color: #CBD5E1 !important;
   text-align: right;
   padding: 6px 0;
   transition: all var(--transition-fast);
 }
 
-.policy-trigger:hover {
-  color: var(--c-sky-blue);
+.site-footer .policy-trigger:hover,
+body.theme-light .site-footer .policy-trigger:hover {
+  color: #38BDF8 !important;
   transform: translateX(-4px);
 }
 
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 24px 0;
-  font-size: 0.85rem;
-  color: #8392B7;
+/* Guarantee Items in Col 4 */
+.site-footer .footer-col:last-child div,
+body.theme-light .site-footer .footer-col:last-child div {
+  color: #F8FAFC !important;
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
 }
 
-.footer-bottom-inner {
+/* Footer Bottom Bar */
+.site-footer .footer-bottom,
+body.theme-light .site-footer .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 24px 0;
+  font-size: 0.88rem;
+  color: #94A3B8 !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2449,18 +2510,53 @@ body.theme-light .calc-total-price {
   gap: 16px;
 }
 
-.footer-bottom-links {
+.site-footer .footer-bottom p,
+.site-footer .copyright,
+body.theme-light .site-footer .footer-bottom p,
+body.theme-light .site-footer .copyright {
+  color: #94A3B8 !important;
+  margin: 0 !important;
+  font-size: 0.88rem !important;
+  font-weight: 500 !important;
+}
+
+.site-footer .footer-bottom-links {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.footer-bottom-links a {
-  color: #8392B7;
+.site-footer .footer-bottom-links a,
+body.theme-light .site-footer .footer-bottom-links a {
+  color: #CBD5E1 !important;
+  font-size: 0.88rem !important;
+  transition: color 0.2s ease;
 }
-.footer-bottom-links a:hover {
-  color: var(--c-sky-blue);
+
+.site-footer .footer-bottom-links a:hover,
+body.theme-light .site-footer .footer-bottom-links a:hover {
+  color: #38BDF8 !important;
 }
+
+.site-footer .footer-meta-tags {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.site-footer .footer-meta-tags span,
+body.theme-light .site-footer .footer-meta-tags span {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #E2E8F0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+}
+
 
 /* ================= FLOATING WHATSAPP ================= */
 .floating-whatsapp {
@@ -3441,8 +3537,7 @@ p,
 .hero-desc,
 .page-hero-desc,
 .section-desc,
-.lineup-card-desc,
-.footer-desc {
+.lineup-card-desc {
   color: #B9C6E8;
   line-height: 1.8;
 }
@@ -3451,8 +3546,7 @@ body.theme-light p,
 body.theme-light .hero-desc,
 body.theme-light .page-hero-desc,
 body.theme-light .section-desc,
-body.theme-light .lineup-card-desc,
-body.theme-light .footer-desc {
+body.theme-light .lineup-card-desc {
   color: #334155 !important;
   font-weight: 500;
 }
@@ -4406,4 +4500,146 @@ html, body {
     max-height: 90vh;
   }
 }
+
+/* ===================================================
+   CRITICAL CONTRAST GUARDS & READABILITY ASSURANCE
+   Prevents any dark-on-dark or light-on-light collisions
+   =================================================== */
+
+/* 1. Why Bunyan Section */
+.why-bunyan-section {
+  padding: 90px 0;
+  background: rgba(12, 8, 30, 0.45);
+  border-top: 1px solid var(--border-glass);
+  border-bottom: 1px solid var(--border-glass);
+}
+
+body.theme-light .why-bunyan-section {
+  background: #F8FAFC !important;
+  border-top: 1px solid #E2E8F0 !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+
+/* 2. Interactive CTA Banner Contrast Guard */
+.banner-cta-section h2,
+body.theme-light .banner-cta-section h2 {
+  color: #FFFFFF !important;
+}
+
+.banner-cta-section p,
+body.theme-light .banner-cta-section p {
+  color: #E0E7FF !important;
+}
+
+/* 3. Universal Footer Readability (Always High Contrast on Dark Background) */
+.site-footer,
+body.theme-light .site-footer {
+  background: #080514 !important;
+  color: #FAFCFF !important;
+}
+
+.site-footer h1,
+.site-footer h2,
+.site-footer h3,
+.site-footer h4,
+.site-footer .footer-heading,
+.site-footer .footer-col-title,
+body.theme-light .site-footer h1,
+body.theme-light .site-footer h2,
+body.theme-light .site-footer h3,
+body.theme-light .site-footer h4,
+body.theme-light .site-footer .footer-heading,
+body.theme-light .site-footer .footer-col-title {
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6) !important;
+}
+
+.site-footer p,
+.site-footer .footer-desc,
+.site-footer .footer-tagline,
+.site-footer .policy-note,
+body.theme-light .site-footer p,
+body.theme-light .site-footer .footer-desc,
+body.theme-light .site-footer .footer-tagline,
+body.theme-light .site-footer .policy-note {
+  color: #E2E8F0 !important;
+  font-weight: 500 !important;
+}
+
+.site-footer a,
+.site-footer .footer-links a,
+.site-footer .footer-policy-links a,
+body.theme-light .site-footer a,
+body.theme-light .site-footer .footer-links a,
+body.theme-light .site-footer .footer-policy-links a {
+  color: #CBD5E1 !important;
+  font-weight: 500 !important;
+}
+
+.site-footer a:hover,
+.site-footer .footer-links a:hover,
+.site-footer .footer-policy-links a:hover,
+body.theme-light .site-footer a:hover,
+body.theme-light .site-footer .footer-links a:hover,
+body.theme-light .site-footer .footer-policy-links a:hover {
+  color: #38BDF8 !important;
+}
+
+.site-footer .footer-contact-info div,
+.site-footer .footer-col:last-child div,
+.site-footer .footer-guarantees-list div,
+body.theme-light .site-footer .footer-contact-info div,
+body.theme-light .site-footer .footer-col:last-child div,
+body.theme-light .site-footer .footer-guarantees-list div {
+  color: #F8FAFC !important;
+  font-weight: 600 !important;
+}
+
+.site-footer .footer-bottom p,
+.site-footer .copyright,
+body.theme-light .site-footer .footer-bottom p,
+body.theme-light .site-footer .copyright {
+  color: #94A3B8 !important;
+}
+
+.site-footer .footer-meta-tags span,
+body.theme-light .site-footer .footer-meta-tags span {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #E2E8F0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+/* 4. Portfolio Elements Light Mode */
+body.theme-light .tech-tag {
+  background: #EEF2FF !important;
+  color: #4338CA !important;
+  border: 1px solid #C7D2FE !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .project-stat-pill {
+  color: #0369A1 !important;
+  border-top: 1px solid #E2E8F0 !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .filter-btn {
+  background: #FFFFFF !important;
+  border: 1.5px solid #CBD5E1 !important;
+  color: #1E293B !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .filter-btn:hover {
+  border-color: #6366F1 !important;
+  color: #4338CA !important;
+}
+
+body.theme-light .filter-btn.active {
+  background: linear-gradient(135deg, #4338CA, #6D28D9) !important;
+  color: #FFFFFF !important;
+  border-color: transparent !important;
+}
+
 
