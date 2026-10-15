@@ -3518,24 +3518,39 @@ body.theme-light .lineup-card-desc {
   font-weight: 500;
 }
 
-/* Section Tags */
-.section-tag {
-  display: inline-block;
-  padding: 6px 18px;
+/* Section Tags & Subtitles (Ultra High Contrast Luxury Badges) */
+.section-tag,
+.section-subtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 22px;
   border-radius: var(--radius-full);
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: 0.88rem;
+  font-weight: 800;
   background: rgba(88, 111, 224, 0.18);
   color: #8CCDF4;
   border: 1px solid rgba(140, 205, 244, 0.25);
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
-body.theme-light .section-tag {
-  background: #EEF2FF !important;
-  color: #3730A3 !important;
-  border: 1.5px solid #C7D2FE !important;
-  font-weight: 800;
+body.theme-light .section-tag,
+body.theme-light .section-subtitle,
+body.theme-light .hero-badge {
+  background: #FFFFFF !important;
+  color: #1E1B4B !important;
+  border: 1.5px solid #4F46E5 !important;
+  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.12), inset 0 1px 0 #FFFFFF !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.4px !important;
+}
+
+body.theme-light .section-tag:hover,
+body.theme-light .section-subtitle:hover {
+  border-color: #4338CA !important;
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.18), inset 0 1px 0 #FFFFFF !important;
 }
 
 /* Hero Badge */
@@ -3543,13 +3558,6 @@ body.theme-light .section-tag {
   background: rgba(28, 20, 68, 0.7);
   border: 1px solid rgba(140, 205, 244, 0.2);
   color: #8CCDF4;
-}
-
-body.theme-light .hero-badge {
-  background: #EEF2FF !important;
-  border: 1.5px solid #C7D2FE !important;
-  color: #3730A3 !important;
-  font-weight: 700;
 }
 
 /* Breadcrumbs */
@@ -4209,16 +4217,116 @@ html, body {
 
 /* 1. Why Bunyan Section */
 .why-bunyan-section {
-  padding: 90px 0;
+  padding: 115px 0 120px !important;
   background: rgba(12, 8, 30, 0.45);
   border-top: 1px solid var(--border-glass);
   border-bottom: 1px solid var(--border-glass);
+  position: relative;
 }
 
 body.theme-light .why-bunyan-section {
-  background: #F8FAFC !important;
+  background: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 50%, #F8FAFC 100%) !important;
   border-top: 1px solid #E2E8F0 !important;
   border-bottom: 1px solid #E2E8F0 !important;
+}
+
+.why-bunyan-section .section-header {
+  margin-top: 15px !important;
+  margin-bottom: 52px !important;
+}
+
+.why-bunyan-section .section-tag {
+  margin-bottom: 22px !important;
+}
+
+.why-bunyan-action-wrapper {
+  text-align: center;
+  margin-top: 60px !important;
+  margin-bottom: 20px !important;
+}
+
+.why-bunyan-btn,
+body.theme-light .why-bunyan-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 15px 38px !important;
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  border-radius: var(--radius-full) !important;
+  background: #FFFFFF !important;
+  color: #1E1B4B !important;
+  border: 2px solid #4F46E5 !important;
+  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.12), inset 0 1px 0 #FFFFFF !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer;
+}
+
+.why-bunyan-btn:hover,
+body.theme-light .why-bunyan-btn:hover {
+  background: linear-gradient(135deg, #4338CA, #6366F1) !important;
+  color: #FFFFFF !important;
+  border-color: transparent !important;
+  transform: translateY(-3px) scale(1.02) !important;
+  box-shadow: 0 14px 34px rgba(79, 70, 229, 0.28) !important;
+}
+
+/* Subpage Common Spacing & Case Studies Strip */
+.subpage-section {
+  padding: 100px 0 !important;
+}
+
+.portfolio-strip-section {
+  padding: 110px 0 100px !important;
+  background: #FAFCFF !important;
+}
+
+.portfolio-strip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.portfolio-strip-title-group .section-tag {
+  margin-bottom: 16px !important;
+}
+
+.portfolio-strip-title-group .section-title {
+  margin-bottom: 8px !important;
+  text-align: right;
+}
+
+.portfolio-strip-desc {
+  margin: 0 !important;
+  color: #475569 !important;
+  font-size: 1rem !important;
+  text-align: right;
+}
+
+.portfolio-browse-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 13px 26px !important;
+  font-size: 0.92rem !important;
+  font-weight: 700 !important;
+  border-radius: var(--radius-md) !important;
+  background: #FFFFFF !important;
+  color: #1E1B4B !important;
+  border: 1.5px solid #CBD5E1 !important;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05) !important;
+  transition: all 0.3s ease !important;
+}
+
+.portfolio-browse-btn:hover {
+  background: #EEF2FF !important;
+  border-color: #6366F1 !important;
+  color: #4338CA !important;
+  transform: translateY(-2px) !important;
 }
 
 /* 2. Interactive CTA Banner (Build & Price) */
@@ -4669,7 +4777,40 @@ body.theme-light .filter-btn.active {
 
   /* Why Bunyan Section */
   .why-bunyan-section {
-    padding: 40px 0 !important;
+    padding: 60px 0 65px !important;
+  }
+
+  .why-bunyan-section .section-header {
+    margin-top: 10px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .why-bunyan-action-wrapper {
+    margin-top: 36px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .why-bunyan-btn {
+    width: 100% !important;
+    padding: 13px 20px !important;
+    font-size: 0.92rem !important;
+    text-align: center !important;
+  }
+
+  .portfolio-strip-section {
+    padding: 56px 0 !important;
+  }
+
+  .portfolio-strip-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    margin-bottom: 28px !important;
+  }
+
+  .portfolio-browse-btn {
+    width: 100% !important;
+    justify-content: center !important;
   }
 
   .features-grid {
