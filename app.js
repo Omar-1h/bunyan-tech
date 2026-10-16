@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (select && planName) {
         // find matching or set custom option
         select.value = planName.includes('متجر') ? 'متجر إلكتروني احترافي' :
-                       planName.includes('معسكر') ? 'التسجيل في معسكر الفل ستاك' :
+                       (planName.includes('تدريب') || planName.includes('برنامج') || planName.includes('هندسة')) ? 'التسجيل في برنامج التدريب التقني' :
                        'موقع رسمي للشركة';
       }
       openModal(projectModal);
@@ -218,17 +218,17 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.open-bootcamp-modal').forEach(btn => {
     btn.addEventListener('click', () => {
       const select = document.getElementById('projectTypeSelect');
-      if (select) select.value = 'التسجيل في معسكر الفل ستاك';
+      if (select) select.value = 'التسجيل في برنامج التدريب التقني';
       openModal(projectModal);
     });
   });
 
   // Download Curriculum Trigger
   document.getElementById('downloadCurriculumBtn')?.addEventListener('click', () => {
-    showToast('جارِ إرسال خطة المنهج إلى بريدك أو واتساب...');
+    showToast('جارِ إرسال الخطة التدريبية إلى بريدك أو واتساب...');
     setTimeout(() => {
       const select = document.getElementById('projectTypeSelect');
-      if (select) select.value = 'التسجيل في معسكر الفل ستاك';
+      if (select) select.value = 'التسجيل في برنامج التدريب التقني';
       openModal(projectModal);
     }, 600);
   });
